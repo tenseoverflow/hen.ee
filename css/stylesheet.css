@@ -1,0 +1,159 @@
+/* playfair-display-500 - latin */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/playfair-display-v21-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/playfair-display-v21-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/playfair-display-v21-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/playfair-display-v21-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('fonts/playfair-display-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/playfair-display-v21-latin-500.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+  
+/* playfair-display-600italic - latin */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/playfair-display-v21-latin-600italic.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/playfair-display-v21-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/playfair-display-v21-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/playfair-display-v21-latin-600italic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/playfair-display-v21-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/playfair-display-v21-latin-600italic.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+
+/* cousine-regular - latin */
+@font-face {
+    font-family: 'Cousine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/cousine-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/cousine-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/cousine-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/cousine-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/cousine-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/cousine-v16-latin-regular.svg#Cousine') format('svg'); /* Legacy iOS */
+  }
+  
+/* cousine-700 - latin */
+@font-face {
+    font-family: 'Cousine';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/cousine-v16-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/cousine-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/cousine-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/cousine-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/cousine-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/cousine-v16-latin-700.svg#Cousine') format('svg'); /* Legacy iOS */
+  }
+  
+
+@media only screen and (max-height: 550px) {                                                                                                                                                                                                                                   
+        body {                                                                                                                                                                                                                                                                 
+                margin: 2em auto 10vw auto;                                                                                                                                                                                                                                    
+        }                                                                                                                                                                                                                                                                      
+}
+
+body {
+    margin: 10em auto;
+    max-width: 650px;
+    line-height: 1.6;
+    color: rgb(56, 56, 56);
+    padding: 0 10vw;
+    font-family: 'Cousine', monospace;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    text-decoration-color: #0066cc;
+    color:rgb(56, 56, 56);
+}
+
+.header {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    background-color: white;
+    padding: 0 0 15px 0;
+}
+
+.header-text {
+    font-style: italic;
+    font-size: 27px;
+    text-decoration-color: #0066cc;
+    color:rgb(56, 56, 56);
+}
+
+h2 {
+    font-size: 21px;
+}
+
+.focused {
+    color: #595959;
+    text-decoration: underline;
+}
+
+a.focused:hover {
+    color: #595959;
+}
+
+p, a {
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+a, a:visited {
+    color: #0066cc;
+}
+
+a:hover {
+    color: #004D9E;
+}
+
+#entry {
+    padding: 0 12px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4;
+}
+
+small {
+    font-size: smaller;
+}
+
+@media (prefers-color-scheme: dark) {
+	body, .header {
+		background-color: #121212;
+		color: #D2D2D2;
+	}
+	h1, h2, .header-text {
+		color: #D2D2D2;
+		text-decoration-color: #ffb84d;
+	}
+	a, a:visited {
+		color: #ffb84d;
+		text-decoration-color: #ffb84d;
+	}
+	a:hover {
+		color: #cc933d;
+	}
+	:root {
+ 		 color-scheme: dark;
+	}
+    .focused {
+        color: #cc933d;
+    }
+    :root {
+        color-scheme: dark;
+    }
+}

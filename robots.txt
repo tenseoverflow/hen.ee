@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /user
+Disallow: /js
+Disallow: /includes
+Disallow: /admin
+Disallow: /analytics
+Disallow: /css
+Disallow: /blog/css
+Disallow: /images

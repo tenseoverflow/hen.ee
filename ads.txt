@@ -1,0 +1,16 @@
+AdGuard DNS Filter
+AdAway Default Blocker
+OISD
+SmartTV-AGH
+Regional Energized
+WindowsSpyBlocker
+Spam404
+Online Malicious URL Blocker
+
++
+
+AdGuard's Browsing Security Web service
+
+---
+
+This list can break Windows Update and Store, however it's mostly harmless when browsing the clearnet. That being said, an adblocker such as uBlock Origin will perform better and may be used along side with the DNS.

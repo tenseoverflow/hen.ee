@@ -1,0 +1,2 @@
+Contact: mailto:contact@hen.ee OR mailto:security@hen.ee
+PGP: https://cloud.hen.ee/apps/sharingpath/hen/hen.asc
