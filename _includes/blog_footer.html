@@ -4,17 +4,17 @@
     <div class="paginator">
     {% if page.previous %}
     <a class="previous" href="{{ page.previous | relative_url }}">
-      <h3 style="margin-top: 0;">Previous</h3>
+      <h3 style="margin: 0;">Previous</h3>
       <p>{{ page.previous.title }}</p>
     </ac>
     {% endif %} {% if page.next %}
     <a class="next" href="{{ page.next | relative_url }}">
-      <h3 style="margin-top: 0;">Next</h3>
+      <h3 style="margin: 0;">Next</h3>
       <p>{{ page.next.title }}</p>
     </a>
     {% endif %}
     </div>
 
     <h6 class="author"><a class="author" href="/index.html">hen.ee</a> blog</h6>
-    <a href="/contact.html">About</a> &#183; <a href="/feed.xml">RSS</a>
+    <a href="/contact.html">Contact</a> &#183; <a href="/feed.xml">RSS</a>
 </footer>

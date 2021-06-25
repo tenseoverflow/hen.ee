@@ -175,11 +175,16 @@ a:hover {
 
 .paginator {
   display: inline-block;
+  padding: 4.5vw;
+  background: #F6F6F6;
+  border-radius: 8px;
+  margin: 0 0 50px 0;
 }
 
-.next .previous {
+.paginator p {
   font-family: 'Source Serif Pro', serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin: 0;
 }
 
 a.next {
@@ -229,6 +234,10 @@ hr {
     padding: 0.06rem;
     color: #A5A5A5;
     z-index: -1;
+}
+
+header hr {
+  margin: 40px 30px;
 }
 
 footer {
