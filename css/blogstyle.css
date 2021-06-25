@@ -151,11 +151,11 @@ p {
 	hyphens: auto;
 }
 
-a, a:visited {
+a, a:visited, button {
     color: #0066cc;
     text-decoration-color: #0051a3;
 }
-a:hover {
+a:hover, button:hover {
       color: #004D9E;
 }
 
@@ -423,11 +423,11 @@ code {
                 color: #D2D2D2;
                 text-decoration-color: #ffb84d;
         }
-        a, a:visited {
+        a, a:visited, button {
                 color: #ffb84d;
                 text-decoration-color: #ffb84d;
         }
-        a:hover {
+        a:hover, button:hover {
                 color: #cc933d;
         }
         :root {
@@ -435,5 +435,8 @@ code {
         }
         hr {
                 color: #CC933D;
+        }
+        .paginator {
+                color: #262626;
         }
 }

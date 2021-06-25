@@ -1,8 +1,9 @@
 # hen.ee
 
-Website hosted on https://hen.ee.
+Website hosted on https://hen.ee. 
 
 This site uses [Jekyll](https://jekyllrb.com) as it's static site generator.
+Some inspiration taken from [Gesko](https://github.com/P0WEX/Gesko) for Jekyll integration.
 
 ## Installation
 

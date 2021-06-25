@@ -1,7 +1,11 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel='stylesheet' type='text/css' href='/css/blogstyle.css'>
+        <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
         {% feed_meta %}
         {% seo %}
     </head>
@@ -9,19 +13,27 @@
 
         {% include blog_header.html %}
           
-        <h1 class="header-text">{{ post.title }}</h1>
+        <h1 class="header-text">{{ page.title }}</h1>
+        <!--{% if page.tags and page.tags != empty %}
+        {% assign tags = page.tags %}
+        {% for tag in tags %}
+            <a href="/tag/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %} &#183;{% endunless %}
+        {% endfor %}
+        {% endif %} -->
+
         <div class="content">
 
-            {{ content }}
+            {% include anchor_headings.html html=content anchorBody="#" %}
 
         </div>
 
         <div class="authordate">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-            <p style="font-style: italic;">by {{ site.author }}</p>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
+            <p style="font-style: italic; margin:0;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
         </div>
 
         {% include blog_footer.html  %}
 
+        <script src="/js/theme.js"></script>
     </body> 
 </html>
