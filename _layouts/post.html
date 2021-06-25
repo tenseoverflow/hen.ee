@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel='stylesheet' type='text/css' href='/css/blogstyle.css'>
+        {% feed_meta %}
+        {% seo %}
+    </head>
+    <body>
+
+        {% include blog_header.html %}
+          
+        <h1 class="header-text">{{ post.title }}</h1>
+        <div class="content">
+
+            {{ content }}
+
+        </div>
+
+        <div class="authordate">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            <p style="font-style: italic;">by {{ site.author }}</p>
+        </div>
+
+        {% include blog_footer.html  %}
+
+    </body> 
+</html>

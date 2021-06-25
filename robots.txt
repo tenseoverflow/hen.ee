@@ -3,7 +3,8 @@ Disallow: /user
 Disallow: /js
 Disallow: /includes
 Disallow: /admin
-Disallow: /analytics
 Disallow: /css
 Disallow: /blog/css
+Disallow: /blog/images
+Disallow: /blog/js
 Disallow: /images

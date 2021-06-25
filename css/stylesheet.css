@@ -59,10 +59,10 @@
   }
   
 
-@media only screen and (max-height: 550px) {                                                                                                                                                                                                                                   
-        body {                                                                                                                                                                                                                                                                 
-                margin: 2em auto 10vw auto;                                                                                                                                                                                                                                    
-        }                                                                                                                                                                                                                                                                      
+@media only screen and (max-height: 550px) {
+        body {
+                margin: 2em auto 10vw auto;
+        }
 }
 
 body {
@@ -102,13 +102,18 @@ h2 {
 .focused {
     color: #595959;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 a.focused:hover {
     color: #595959;
 }
 
-p, a {
+#recents {
+    list-style-type: none;
+}
+
+p, a, li {
     font-size: 14px;
     word-wrap: break-word;
 }
@@ -129,6 +134,17 @@ a:hover {
 
 small {
     font-size: smaller;
+}
+
+hr {
+    position: relative;
+    bottom: 8px;
+    display: block;
+    border: 0.2rem dotted;
+    padding: 0.06rem;
+    margin: 35px 30px;
+    color: #A5A5A5;
+    z-index: -1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -152,8 +168,9 @@ small {
 	}
     .focused {
         color: #cc933d;
+        font-weight: bold;
     }
-    :root {
-        color-scheme: dark;
+    hr {
+        color: #CC933D;
     }
 }
