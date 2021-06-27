@@ -114,8 +114,12 @@ a.focused:hover {
 }
 
 p, a, li {
-    font-size: 14px;
+    font-size: 16px;
     word-wrap: break-word;
+}
+
+li {
+    line-height: 2;
 }
 
 a, a:visited {

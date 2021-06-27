@@ -11,7 +11,7 @@ layout: default
     <h2>Recent Blog Posts</h2>
 	    <ul>
             {% for post in site.posts %}
-            <li><a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a> <time style="float: right;" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %d, %Y" }}</time></li>
+            <li> <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %d, %Y" }}</time> &#8212; <a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
 </div>
