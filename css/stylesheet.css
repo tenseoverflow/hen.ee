@@ -114,7 +114,7 @@ a.focused:hover {
 }
 
 p, a, li {
-    font-size: 16px;
+    font-size: 14px;
     word-wrap: break-word;
 }
 
@@ -151,30 +151,34 @@ hr {
     z-index: -1;
 }
 
-@media (prefers-color-scheme: dark) {
-	body, .header {
-		background-color: #121212;
-		color: #D2D2D2;
-	}
-	h1, h2, .header-text {
-		color: #D2D2D2;
-		text-decoration-color: #ffb84d;
-	}
-	a, a:visited {
-		color: #ffb84d;
-		text-decoration-color: #ffb84d;
-	}
-	a:hover {
-		color: #cc933d;
-	}
-	:root {
- 		 color-scheme: dark;
-	}
-    .focused {
-        color: #cc933d;
-        font-weight: bold;
-    }
-    hr {
-        color: #CC933D;
-    }
+/* Buttons */
+
+button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* Theme changer */
+
+#theme-toggle {
+    float: right;
+
 }

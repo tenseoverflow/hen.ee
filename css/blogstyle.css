@@ -142,7 +142,7 @@ footer {
   text-align: center;
 }
 
-footer .author {
+.author-footer {
   font-size: 2.25rem;
 }
 
@@ -153,7 +153,7 @@ footer .author {
   padding: 0;
 }
 
-.author {
+.author, .author-footer {
   font-style: italic;
   text-decoration-color: #0066cc;
   color: rgb(56, 56, 56);
@@ -173,8 +173,12 @@ footer .author {
   position: relative;
   padding: 1.75em;
   background: #F6F6F6;
-  border-radius: 8px;
+  border-radius: 25px;
   margin: 0 0 50px 0;
+  -webkit-box-shadow: 12px 12px 24px #d1d1d1,
+    -12px -12px 24px #ffffff;
+  box-shadow: 12px 12px 24px #d1d1d1,
+  -12px -12px 24px #ffffff;
 }
 
 .paginator p {
@@ -432,34 +436,5 @@ code {
   }
   .header-text {
     font-size: 1.75em;
-  }
-}
-
-/* For people on the dark side */
-
-@media (prefers-color-scheme: dark) {
-  body {
-     background-color: #121212;
-     color: #D2D2D2;
-  }
-  h1, h2, h3, h4, h5, h6, span, .header-text, .author {
-    color: #D2D2D2;
-    text-decoration-color: #ffb84d;
-  }
-  a, a:visited, button {
-    color: #ffb84d;
-    text-decoration-color: #ffb84d;
-  }
-  a:hover, button:hover {
-    color: #cc933d;
-  }
-  :root {
-    color-scheme: dark;
-  }
-  hr {
-    color: #CC933D;
-  }
-  .paginator {
-    background: #262626;
   }
 }

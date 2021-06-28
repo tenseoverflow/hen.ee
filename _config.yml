@@ -3,9 +3,11 @@ email: contact@hen.ee
 aboutme: >- # this means to ignore newlines until "baseurl:"
   <p>I am a developer, an online privacy supporter and a digital independent<sup><a href="https://hen.ee/digitalindependent">*</a></sup>.</p>
 
-  <p>I provide some self-hosted instances.</p>
+  <p>I provide some <a href="/instances">self-hosted privacy-friendly instances</a>.</p>
 
-  <p>I also think the modern web is privacy-invasive, over-engineered, slow and vulnerable. I elaborate on these ideas in my blog with other topics about technology, privacy, culture, lifestyle, current news etc; maybe even finance.</p>
+  <p>I also think the modern web is privacy-invasive, over-engineered, slow and vulnerable. I elaborate on these ideas in my blog with other topics about technology, privacy, culture, lifestyle, current news etc; whatever I'm currently thinking of.</p>
+
+  <p>This website is <a href="https://hen.ee/k63fw">open-source</a> and runs on <a href="https://hen.ee/spzb7">sustainable energy</a>.</p>
 description: I am a developer, an online privacy supporter and a digital independent. In my blog, I write about technology, privacy and other things on my mind.
 tagline: A blog dedicated to my thoughts.
 baseurl: "" 
@@ -14,8 +16,6 @@ permalink: "https://hen.ee/"
 permalink: pretty
 lang: en-US
 timezone: Europe/London
-repo: https://github.com/tenseoverflow/hen.ee
-#data-theme: light
 
 author: Henri
 social:

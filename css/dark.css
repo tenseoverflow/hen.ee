@@ -1,0 +1,33 @@
+[data-theme="dark"] body, [data-theme="dark"] .header {
+    background-color: #121212;
+	color: #D2D2D2;
+}
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] .header-text, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6, [data-theme="dark"] .author-footer, [data-theme="dark"] .author {
+	color: #D2D2D2;
+	text-decoration-color: #ffb84d;
+}
+[data-theme="dark"] a, [data-theme="dark"] a:visited {
+	color: #ffb84d;
+	text-decoration-color: #ffb84d;
+}
+[data-theme="dark"] a:hover {
+	color: #cc933d;
+}
+[data-theme="dark"] :root {
+		 color-scheme: dark;
+}
+[data-theme="dark"] .focused {
+    color: #cc933d;
+    font-weight: bold;
+}
+[data-theme="dark"] hr {
+    color: #CC933D;
+}
+[data-theme="dark"] .paginator {
+    background: #262626;
+	-webkit-box-shadow: 12px 12px 24px #0f0f0f,
+	-12px -12px 24px #151515;
+	box-shadow: 12px 12px 24px #0f0f0f,
+	-12px -12px 24px #151515;
+}

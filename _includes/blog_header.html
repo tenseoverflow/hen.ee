@@ -1,5 +1,5 @@
 <header>
-    <span class="author"><a class="author" href="https://hen.ee">hen.ee</a></span>
-    <div style="margin: 0;"><a href="/index.html#{{ page.id }}">back</a> <!--&#183; <button title="Light theme" aria-label="Toggle dark mode" class="color-mode__btn light--hidden" onclick="modeSwitcher()">dark</button> <button title="Dark theme" class="color-mode__btn dark--hidden" aria-label="Toggle dark mode" onclick="modeSwitcher()">light</button> --> <p style="float: right; margin: 0;">{{ page.minute }} min</p></div>
+    <span class="author"><a class="author" href="{{ site.url }}">hen.ee</a></span>
+    <div style="margin: 0;"><a href="/index.html#{{ page.id }}">back</a> <div style="display: none;" id="theme-toggle"> &#183; <button title="toggle theme" id="theme-toggle" onclick="modeSwitcher()">change theme</button></div> <p style="float: right; margin: 0;">{{ page.minute }} min</p></div>
     <hr>
 </header>
