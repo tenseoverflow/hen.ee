@@ -1,6 +1,6 @@
 # hen.ee
 
-Website hosted on https://hen.ee. 
+Website hosted on https://hen.ee. For more info take a look in there.
 
 This site uses [Jekyll](https://jekyllrb.com) as it's static site generator.
 Some inspiration taken from [Gesko](https://github.com/P0WEX/Gesko) for Jekyll integration.
@@ -17,4 +17,4 @@ $ jekyll build
 $ jekyll serve
 ```
 
-To deploy, use a CDN or hosting provider of your choice.
+To deploy, use a CDN (like Github Pages or Cloudflare Pages) or hosting provider of your choice.
