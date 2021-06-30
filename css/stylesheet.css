@@ -58,6 +58,7 @@
          url('fonts/cousine-v16-latin-700.svg#Cousine') format('svg'); /* Legacy iOS */
   }
   
+/* Mobile */
 
 @media only screen and (max-height: 550px) {
         body {
@@ -80,6 +81,10 @@ h1, h2 {
     color:rgb(56, 56, 56);
 }
 
+h2 {
+    font-size: 21px;
+}
+
 .header {
     position: sticky;
     position: -webkit-sticky; /* Safari */
@@ -93,10 +98,6 @@ h1, h2 {
     font-size: 27px;
     text-decoration-color: #0066cc;
     color:rgb(56, 56, 56);
-}
-
-h2 {
-    font-size: 21px;
 }
 
 .focused {
@@ -139,6 +140,8 @@ a:hover {
 small {
     font-size: smaller;
 }
+
+/* Dotted divider */
 
 hr {
     position: relative;
