@@ -137,6 +137,8 @@ header .author {
   font-size: 1.2em;
 }
 
+/* Footer */
+
 footer {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -159,6 +161,8 @@ footer {
   color: rgb(56, 56, 56);
   margin: 0;
 }
+
+/* Author with date (before footer) */
 
 .authordate {
   font-weight: 600;
@@ -235,6 +239,8 @@ h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.01em;
 }
+
+/* Dotted hr */
 
 hr {
   margin: 60px 30px;
