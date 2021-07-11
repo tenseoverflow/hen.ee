@@ -1,7 +1,4 @@
 User-agent: *
 Disallow: /user
-Disallow: /js
 Disallow: /includes
 Disallow: /admin
-Disallow: /css
-Disallow: /images

@@ -25,8 +25,7 @@ and mailserver. And also, if you have an old computer lying around, you can even
 use it as a server in your own home.
 
 A prominent individual named Luke Smith has started a website for sharing guides
-on how to operate a server including hosting your website, mail and my own first
-contributed guide: [setting up a searx instance](https://landchad.net/searx.html). 
+on how to operate a server including hosting your website and mailserver. 
 
 Definitely check out [landchad.net](https://landchad.net) for comprehensive
 self-hosting tutorials. It also goes in-depth about other topics as well such as

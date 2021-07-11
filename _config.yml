@@ -7,7 +7,7 @@ aboutme: >- # this means to ignore newlines until "baseurl:"
 
   <p>I also think the modern web is privacy-invasive, over-engineered, slow and vulnerable. I elaborate on these ideas in my blog with other topics about technology, privacy, culture, lifestyle, current news etc; whatever I'm currently thinking of.</p>
 
-  <p>This website is <a href="https://a.hen.ee/k63fw">open-source</a> and runs on <a href="https://a.hen.ee/spzb7">sustainable energy</a>. A mirror of this site is available <a href="https://a.hen.ee">here</a>.</p>
+  <p>This website is <a href="https://a.hen.ee/k63fw">open-source</a> and runs on <a href="https://a.hen.ee/spzb7">sustainable energy</a>.</p>
 description: I am a developer, an online privacy supporter and a digital independent. In my blog, I write about technology, privacy and other things on my mind.
 tagline: A blog dedicated to my thoughts.
 baseurl: "" 

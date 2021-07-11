@@ -33,6 +33,14 @@
     color: #D2D2D2;
 }
 
+[data-theme="dark"] .moon {
+	display: none;
+}
+
+[data-theme="dark"] .sun {
+	display: inline;
+}
+
 /* dotted divider */
 
 [data-theme="dark"] hr {
