@@ -105,7 +105,7 @@ body {
   padding: 0px 12vw;
   max-width: 700px;
   min-width: 50px;
-  line-height: 1.75;
+  line-height: 1.7;
   color: rgb(56, 56, 56);
   font-family: 'Source Serif Pro', serif;
   text-align: justify;
@@ -115,7 +115,7 @@ body {
 }
 
 p {
-	hyphens: auto;
+  hyphens: auto;
 }
 
 a, a:visited, button {
@@ -272,6 +272,7 @@ img {
   position: relative;
   width: 100%;
   border-radius: 5px;
+  height: 100%;
 }
 
 img-attrib {
@@ -363,6 +364,7 @@ blockquote {
 
 .task-list-item p {
   margin-bottom: calc(.5 * var(--line-height));
+  --line-height: 1.7em;
 }
 
 /* Code */
@@ -375,6 +377,7 @@ code {
   font-size: .95rem;
   margin: 0 .2rem;
   padding: .1rem .5rem;
+  hyphens: none;
 }
 
 .content > pre {
@@ -385,6 +388,7 @@ code {
   tab-size: 4;
   overflow-x: auto;
   border-radius: 5px;
+  --line-height: 1.1em;
 }
 
 .content > pre code {
