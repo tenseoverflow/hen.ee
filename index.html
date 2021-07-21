@@ -5,10 +5,19 @@ layout: default
 
 {{ site.aboutme }}
 
+<div id="links">
+    <h2>Links</h2>
+    <ul>
+        <!-- <li><a href="">Portfolio</a></li>-->
+        <li><a href="/2021/07/22/services/">Services I use</a></li>
+        <li><a href="/webrings">Webrings</a></li>
+    </ul>
+</div>
+
 <div id="recents">
 
     <h2>Recent Blog Posts</h2>
-	    <ul>
+        <ul>
             {% for post in site.posts %}
             <li> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time> &#8212; <a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}

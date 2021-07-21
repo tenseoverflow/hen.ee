@@ -1,5 +1,5 @@
 ---
-title: Setting up a Searx instance
+title: How to host a Searx instance
 layout: post
 description: This is a guide on setting up your own Searx instance with Filtron reverse proxy and Morty result proxy. Searx is an open-source privacy-respecting metasearch engine.
 summary: This is a guide on how to set up a Searx instance on your server.
@@ -8,31 +8,31 @@ minute: 15
 image: /images/searx1.png
 ---
 
-<a href="/images/searx1.png"><img src="/images/searx1.png" alt="Picture of Searx" /></a>
+<a href="/images/searx1.png"><img src="/images/searx1.png" alt="Picture of Searx's homepage" /></a>
 
-This is a guide on setting up your own Searx instance with Filtron reverse proxy and Morty result proxy.
+This is a guide on hosting your own Searx instance with Filtron reverse proxy and Morty result proxy.
 
 # What is Searx?
 
-Searx is a privacy-respecting metasearch engine. It is not a regular search engine like Brave Search, Bing or Google which indexes information from pages by using their bots. A meta-search engine asks other search engines for results and presents them to you. It is also free, open-source and hackable.
+Searx is a privacy-respecting meta-search engine. It is not a regular search engine like Brave Search, Bing or Google which indexes information from pages by using their bots. A meta-search engine asks other search engines for results and presents them to you. It is also free, open-source and hackable.
 
 It can also act as a proxy for these search engines as your server is doing the requests to Google not your machine which is more private while still having Google's results. One downside can be the speed due to it having to pull information from another server; some engines might be slower than others and that is shown on Searx's settings.
 
 You can find a public instance to test it <a href="https://searx.space">here</a> or use my <a href="https://searx.hen.ee">instance</a>.
 
-<a href="/images/searx2.png"><img src="/images/searx2.png" alt="Picture of Searx results" /></a>
+<a href="/images/searx2.png"><img src="/images/searx2.png" alt="Picture of Searx's results" /></a>
 
-### What is all this Filtron or Morty stuff?
+## What is all this Filtron or Morty stuff?
 
-Filtron is an application firewall, a middleware between Searx and Nginx (webserver). It avoids abuse from your server and limits requests. Essentialy it protects your server from bad people or bots.
+Filtron is an application firewall, a middleware between Searx and Nginx (webserver). It avoids abuse from your server and limits requests. Essentially it protects your server from bad people or bots.
 
 Morty is a result proxy which proxies images and websites. It downloads images and displays them from your server like Searx does to search queries. You can also view websites through your server privately without using your machine to request that website, *almost like a VPN cough.*
 
-## Setting up DNS 
+# First things first
 
 This guide uses Debian 10 but can be used on CentOS as well with minimal changes. Change **`example.com`** to your domain.
 
-First we will make a subdomain. This is different from all registars but make a CNAME record (or A record if you have your IP address) for your domain like so: (Some will like the dot at the end, some will not)
+First we will make a subdomain. This is different from all registrars but make a CNAME record (or A record if you have your IP address) for your domain like so: (Some will like the dot at the end, some will not)
 
 <pre><code>searx   1800 IN CNAME   <strong>example.com</strong>.</code></pre>
 
@@ -40,9 +40,9 @@ First we will make a subdomain. This is different from all registars but make a 
 
 Cloudflare's DNS for example:
 
-<a href="/images/DNS-cloudflare-searx.png"><img src="/images/DNS-cloudflare-searx.png" alt="Picture of Cloudflare DNS settings"/></a>
+<a href="/images/DNS-cloudflare-searx.png"><img src="/images/DNS-cloudflare-searx.png" alt="Picture of Cloudflare's DNS settings"/></a>
 
-## Setting up Enivronment
+## Setting up Environment
 
 When you have done that, we will update the system. You will need Nginx and Git for this, these commands will install it for you. You should have sudo privileges or be <code>root</code>. If you are the <code>root</code> user you can omit <code>sudo</code> from the commands.
 
@@ -71,7 +71,7 @@ Check if all services are running.
 $ sudo systemctl status filtron
 $ sudo systemctl status morty</code></pre>
 
-If everything is installed and all services are running, we can setup Nginx.
+If everything is installed and all services are running, we can set up Nginx.
 
 ## Nginx Config
 
@@ -155,7 +155,7 @@ Create a symbolic link between <code>/etc/nginx/sites-available/searx.conf</code
 
 <pre><code>$ sudo ln -s /etc/nginx/sites-available/searx.conf /etc/nginx/sites-enabled/searx.conf</code></pre>
 
-Also create an HTTPS certificate using either `certbot` or use your SSL certificate. Learn more about creating a certificate with certbot <a href="https://landchad.net/certbot.html">here</a>.
+Also create an HTTPS certificate using either `certbot` or use your SSL certificate. Learn more about <a href="https://landchad.net/certbot.html">creating a certificate with Certbot</a>.
 
 If you have done that you can now restart Nginx and Uwsgi.
 
@@ -194,8 +194,8 @@ $ sudo -H ./utils/morty.sh remove all</code></pre>
 
 ## Need help?
 
-Check out <a href="https://github.com/searx/searx/issues?q=is%3Aissue">Searx's github issues</a> and <a href="https://github.com/searx/searx/discussions/categories/installation-issue-official-wiki">discussions page</a>. Also check <code>nginx -t</code> for any errors with Nginx.
+Check out <a href="https://github.com/searx/searx/issues?q=is%3Aissue">Searx's Github issues</a> and <a href="https://github.com/searx/searx/discussions/categories/installation-issue-official-wiki">discussions page</a>. Also check <code>nginx -t</code> for any errors with Nginx.
 
-If you have any issues or questions you can also <a href="/contact">contact me</a> and I'll be glad to respond.
+If you have any issues or questions you can also <a href="/contact">contact me</a>, and I'll be glad to respond.
 
-Congratulations on setting up Searx and thanks for reading. Support me <a href="/instances#donate">here</a> if it helped you.
+Congratulations on setting up Searx and thanks for reading. <a href="/instances#donate">Support me by donating</a> if it helped you.

@@ -85,7 +85,7 @@ h2 {
     font-size: 21px;
 }
 
-.header {
+header {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     top: 0;

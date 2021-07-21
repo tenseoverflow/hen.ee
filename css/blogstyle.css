@@ -247,17 +247,15 @@ h3, h4, h5, h6 {
 hr {
   margin: 60px 30px;
   /* color:  #edeff0  rgba(199, 199, 199, 0.801); */
-  position: relative;
   display: flex;
   bottom: 8px;
-  display: block;
   border: 0.2rem dotted;
   padding: 0.06rem;
   color: #A5A5A5;
   z-index: -1;
 }
 
-header hr {
+header > hr {
   margin: 40px 30px;
 }
 
@@ -380,7 +378,7 @@ code {
   hyphens: none;
 }
 
-.content > pre {
+article > pre {
   background: #2d3339;
   font-family: 'Hasklig', monospace;
   margin-bottom: var(--line-height);
@@ -391,7 +389,7 @@ code {
   --line-height: 1.1em;
 }
 
-.content > pre code {
+article > pre code {
   background: none;
   border: none;
   margin: 0;
