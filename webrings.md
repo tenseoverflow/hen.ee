@@ -11,4 +11,4 @@ layout: default
 
 ## Circumpunct
 
-<a href="https://circumpunct.xyz" style="font-size: 22px;">&#8857;</a>
+<a href="https://circumpunct.xyz/prev">&xlarr; </a><a style="font-size: 22px;" href="https://circumpunct.xyz">&#8857;</a><a href="https://circumpunct.xyz/next"> &xrarr;</a>
