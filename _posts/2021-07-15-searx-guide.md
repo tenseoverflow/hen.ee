@@ -30,7 +30,7 @@ Morty is a result proxy which proxies images and websites. It downloads images a
 
 # First things first
 
-This guide uses Debian 10 but can be used on CentOS as well with minimal changes. Change **`example.com`** to your domain.
+This guide uses Ubuntu/Debian but can be used on CentOS as well with minimal changes. This guide has been tested on `aarch64` and `amd64` architectures both on Ubuntu 20.04. Change **`example.com`** to your domain.
 
 First we will make a subdomain. This is different from all registrars but make a CNAME record (or A record if you have your IP address) for your domain like so: (Some will like the dot at the end, some will not)
 
@@ -44,7 +44,7 @@ Cloudflare's DNS for example:
 
 ## Setting up Environment
 
-When you have done that, we will update the system. You will need Nginx and Git for this, these commands will install it for you. You should have sudo privileges or be <code>root</code>. If you are the <code>root</code> user you can omit <code>sudo</code> from the commands.
+When you have done that, we will update the system. You will need Nginx and Git for this, these commands will install it for you. You should have sudo privileges and be a user other than `root`; it is preferred that way due to permission errors you might encounter while being `root`.
 
 <pre><code>$ sudo apt update
 $ sudo apt upgrade
@@ -52,10 +52,9 @@ $ sudo apt install git nginx</code></pre>
 
 ## Installing Searx
 
-We will clone the Searx repository. <strong>NB:</strong> if you are the `root` user, make sure to **not** skip the first command since the `root`'s home folder has no read privileges for the `searx` user (which will be created during installation).
+We will clone the Searx repository. Do this in your home directory.
 
-<pre><code>$ cd /usr/local/src
-$ sudo git clone https://github.com/searx/searx searx
+<pre><code>$ git clone https://github.com/searx/searx searx
 $ cd ./searx
 </code></pre>
 
@@ -113,13 +112,16 @@ Paste the following content in there and replace <code>example.com</code> with y
         # not work on them)
         ssl_protocols TLSv1.2 TLSv1.3;
 
-        ssl_prefer_server_ciphers on;
-        ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
-        ssl_session_timeout  1d;
-        ssl_session_cache shared:SSL:10m;
-        ssl_session_tickets off; # Requires nginx >= 1.5.9
-        ssl_stapling on; # Requires nginx >= 1.3.7
-        ssl_stapling_verify on; # Requires nginx => 1.3.7
+
+        # certbot might have a hard time automatically installing the certificates if these are enabled. You can enable these later if you'd like.
+
+        #ssl_prefer_server_ciphers on;
+        #ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+        #ssl_session_timeout  1d;
+        #ssl_session_cache shared:SSL:10m;
+        #ssl_session_tickets off; # Requires nginx >= 1.5.9
+        #ssl_stapling on; # Requires nginx >= 1.3.7
+        #ssl_stapling_verify on; # Requires nginx => 1.3.7
 
         index index.html index.htm;
 
@@ -173,6 +175,8 @@ If you want to change some settings of your Searx instance go edit <code>/etc/se
 <strong>### After editing do:</strong>
 
 $ sudo -H service uwsgi restart searx</code></pre>
+
+Check my config on <a href="https://github.com/tenseoverflow/searx-swarm/blob/master/settings.yml">my Github</a>.
 
 ## Maintaining Searx
 
