@@ -1,5 +1,5 @@
 ---
-title: How to Host a Searx instance
+title: How to Host a Searx Instance
 layout: post
 description: This is a guide on setting up your own Searx instance with Filtron reverse proxy and Morty result proxy. Searx is an open-source privacy-respecting metasearch engine.
 summary: This is a guide on how to set up a Searx instance on your server.
@@ -112,7 +112,6 @@ Paste the following content in there and replace <code>example.com</code> with y
         # not work on them)
         ssl_protocols TLSv1.2 TLSv1.3;
 
-
         # certbot might have a hard time automatically installing the certificates if these are enabled. You can enable these later if you'd like.
 
         #ssl_prefer_server_ciphers on;
@@ -122,6 +121,7 @@ Paste the following content in there and replace <code>example.com</code> with y
         #ssl_session_tickets off; # Requires nginx >= 1.5.9
         #ssl_stapling on; # Requires nginx >= 1.3.7
         #ssl_stapling_verify on; # Requires nginx => 1.3.7
+
 
         index index.html index.htm;
 
@@ -175,8 +175,6 @@ If you want to change some settings of your Searx instance go edit <code>/etc/se
 <strong>### After editing do:</strong>
 
 $ sudo -H service uwsgi restart searx</code></pre>
-
-Check my config on <a href="https://github.com/tenseoverflow/searx-swarm/blob/master/settings.yml">my Github</a>.
 
 ## Maintaining Searx
 
