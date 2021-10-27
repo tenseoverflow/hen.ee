@@ -19,6 +19,6 @@ $ jekyll serve
 
 To deploy, use a CDN (like Github Pages or Cloudflare Pages) or hosting provider of your choice.
 
-# Credits
+## Credits
 
 [Text Balancer](https://codeberg.org/da/text-balancer) licensed under the Apache License 2.0.
