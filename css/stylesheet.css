@@ -66,6 +66,27 @@
         }
 }
 
+/* Text-Balancer */
+
+.balance-text {
+    visibility: hidden;
+}
+
+@media (scripting: none) {
+    .balance-text {
+        visibility: visible;
+    }
+}
+
+@supports (text-wrap: balance) {
+    .balance-text {
+        text-wrap: balance;
+        visibility: visible;
+    }
+}
+
+/* Body */
+
 body {
     margin: 10em auto;
     max-width: 650px;

@@ -13,6 +13,14 @@ layout: compress
     <link rel="pingback" href="https://webmention.io/username/xmlrpc" />
     <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
     <link rel="shortcut icon" href="/favicon.ico">
+    
+    <noscript>
+      <style>
+        .balance-text {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
 
     {% if site.tags != "" %}
     {% assign rawtags = "" %}
@@ -47,6 +55,7 @@ layout: compress
     </main>
 
     <script src="/js/theme.js"></script>
+    <script src="/js/text-balancer.js"></script>
 
   </body>
 </html>

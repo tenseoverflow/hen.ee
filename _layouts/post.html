@@ -14,6 +14,14 @@ layout: compress
         <link rel="pingback" href="https://webmention.io/username/xmlrpc" />
         {% feed_meta %}
         {% seo %}
+        
+        <noscript>
+            <style>
+                .balance-text {
+                    visibility: visible !important;
+                }
+            </style>
+        </noscript>
     </head>
     <body>
 
@@ -33,7 +41,7 @@ layout: compress
 
         </div>
 
-        <div class="authordate">
+        <div class="authordate"  style="balance-text">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
             <p style="font-style: italic; margin:0;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
         </div>
@@ -41,6 +49,7 @@ layout: compress
         {% include blog_footer.html  %}
 
         <script src="/js/theme.js"></script>
+        <script src="/js/text-balancer.js"></script>
 
     </body> 
 </html>

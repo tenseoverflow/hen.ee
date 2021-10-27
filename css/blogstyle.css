@@ -100,6 +100,26 @@
        url('/css/fonts/source-code-pro-v13-latin-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
 }
 
+/* Text-Balancer */
+
+.balance-text {
+  visibility: hidden;
+}
+
+@media (scripting: none) {
+  .balance-text {
+      visibility: visible;
+  }
+}
+
+@supports (text-wrap: balance) {
+  .balance-text {
+      text-wrap: balance;
+      visibility: visible;
+  }
+
+/* Body */
+
 body {
   margin: 8em auto;
   padding: 0px 12vw;
