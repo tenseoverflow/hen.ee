@@ -1,13 +1,13 @@
 title: hen.ee
 email: contact@hen.ee
 aboutme: >- # this means to ignore newlines until "baseurl:"
-  <p>I am a developer, an online privacy supporter and a digital independent<sup><a href="https://a.hen.ee/digitalindependent">*</a></sup>.</p>
+  <p>I am a developer, an online privacy supporter and a digital independent<sup><a href="https://videos.lukesmith.xyz/w/p/tY3gztq1BN3FYiDSxQKq7B">*</a></sup>.</p>
 
   <p>I provide some <a href="/instances">self-hosted privacy-friendly instances</a>.</p>
 
   <p>I also think the modern web is privacy-invasive, over-engineered, slow and vulnerable. I elaborate on these ideas in my blog with other topics about technology, privacy, culture, lifestyle, current news etc; whatever I'm currently thinking of.</p>
 
-  <p>This website is <a href="https://a.hen.ee/k63fw">open-source</a> and runs on <a href="https://a.hen.ee/spzb7">sustainable energy</a>.</p>
+  <p>This website is <a href="https://github.com/tenseoverflow/hen.ee">open-source</a> and runs on <a href="https://www.websitecarbon.com/website/hen-ee/">sustainable energy</a>.</p>
 description: I am a developer, an online privacy supporter and a digital independent. In my blog, I write about technology, privacy and other things on my mind.
 tagline: A blog dedicated to my thoughts.
 baseurl: "" 
@@ -22,14 +22,13 @@ social:
   links:
     - https://github.com/tenseoverflow
     - https://join.status.im/u/0x0423fc98719e5b46461de2cdb3f83f1d48e336ce46b5ae15f6bfd654b6b1fdd73380e23554449b55f0e1f5d4a6a0f6fa6edd2840152b91b0ae09f6a4dac690c28d
-    - 
 
 about:
 - title: status.im
   url: https://a.hen.ee/statusim # TODO
   name: '0x0423fc98719e5b46461de2cdb3f83f1d48e336ce46b5ae15f6bfd654b6b1fdd73380e23554449b55f0e1f5d4a6a0f6fa6edd2840152b91b0ae09f6a4dac690c28d'
 - title: Github
-  url: https://a.hen.ee/github
+  url: https://github.com/tenseoverflow
   name: tenseoverflow
 - title: Discord
   name: Straton of Stageira#6830

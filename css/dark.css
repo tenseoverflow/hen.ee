@@ -1,4 +1,4 @@
-[data-theme="dark"] body, [data-theme="dark"] .header {
+[data-theme="dark"] body, [data-theme="dark"] header {
     background-color: #121212;
 	color: #D2D2D2;
 }
