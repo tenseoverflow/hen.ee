@@ -25,7 +25,7 @@ social:
 
 about:
 - title: status.im
-  url: https://a.hen.ee/statusim
+  url: https://a.hen.ee/statusim # TODO
   name: '0x0423fc98719e5b46461de2cdb3f83f1d48e336ce46b5ae15f6bfd654b6b1fdd73380e23554449b55f0e1f5d4a6a0f6fa6edd2840152b91b0ae09f6a4dac690c28d'
 - title: Github
   url: https://github.com/tenseoverflow
