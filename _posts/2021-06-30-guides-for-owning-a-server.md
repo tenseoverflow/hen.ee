@@ -32,5 +32,3 @@ self-hosting tutorials. It also goes in-depth about other topics as well such as
 crypto and learning HTML, CSS (creating your website). If you're already
 knowledged about IT, DevOps or self-hosting, you can also improve this guide on
 it's [GitHub](https://github.com/LukeSmithxyz/landchad).
-
-Discuss more about it [here](https://confer.hen.ee/d/5-how-to-manage-and-own-a-server).
