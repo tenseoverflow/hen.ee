@@ -1,9 +1,11 @@
 # hen.ee
 
-Website hosted on https://hen.ee. For more info take a look in there.
+Website hosted on https://hen.ee. For more info take a look in there. I use this repository for CI/CD.
 
 This site uses [Jekyll](https://jekyllrb.com) as it's static site generator.
 Some inspiration taken from [Gesko](https://github.com/P0WEX/Gesko) for Jekyll integration.
+
+The content under the blog directory is licensed under the CC BY-SA 4.0.
 
 ## Installation
 
