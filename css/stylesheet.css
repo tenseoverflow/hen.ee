@@ -162,6 +162,10 @@ small {
     font-size: smaller;
 }
 
+sup a {
+    text-decoration: none;
+}
+
 /* Dotted divider */
 
 hr {

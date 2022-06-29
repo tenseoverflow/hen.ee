@@ -3,7 +3,7 @@ email: contact@hen.ee
 aboutme: >- # this means to ignore newlines until "baseurl:"
   <p>Hi, I'm <b>Henri</b>, a student developer, a privacy & open-source supporter and a digital independent<sup><a href="https://videos.lukesmith.xyz/w/p/tY3gztq1BN3FYiDSxQKq7B">*</a></sup>. I run this modest website called <i>hen.ee</i>.</p>
 
-  <p>I write in my blog about whatever pseudointellectual nonsense I have on my mind — mostly technological talk but could extend to a disquisition into random ideas and cultural topics.</p>
+  <p>I write in my blog about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological talk but could extend to a disquisition into random ideas and cultural topics.</p>
 
   <p>This website is <a href="https://github.com/tenseoverflow/hen.ee">open-source</a> and runs on <a href="https://www.websitecarbon.com/website/hen-ee/">sustainable energy</a>.</p>
 description: I am a developer, an online privacy supporter and a digital independent. In my blog, I write about technology, privacy and other things on my mind.
