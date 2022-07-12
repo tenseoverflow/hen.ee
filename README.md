@@ -1,3 +1,5 @@
+NOTE: This is just a snapshot before I redesigned a bit for those who need it
+
 # hen.ee
 
 Website hosted on https://hen.ee. For more info take a look in there. I use this repository for CI/CD.
