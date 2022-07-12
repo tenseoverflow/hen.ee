@@ -198,6 +198,6 @@ $ sudo -H ./utils/morty.sh remove all</code></pre>
 
 Check out <a href="https://github.com/searx/searx/issues?q=is%3Aissue">Searx's Github issues</a> and <a href="https://github.com/searx/searx/discussions/categories/installation-issue-official-wiki">discussions page</a>. Also check <code>nginx -t</code> for any errors with Nginx.
 
-If you have any issues or questions you can also <a href="/contact">contact me</a>, and I'll be glad to respond.
+If you have any issues or questions you can contact me via [my e-mail](mailto:contact@hen.ee).
 
 Congratulations on setting up Searx and thanks for reading. <a href="/instances#donate">Support me by donating</a> if it helped you.
