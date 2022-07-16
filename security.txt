@@ -1,2 +1,6 @@
 Contact: mailto:contact@hen.ee
-PGP: https://hen.ee/hen.asc
+Contact: mailto:admin@hen.ee
+Expires: 2040-07-12T12:47:00.000Z
+Encryption: https://hen.ee/hen.asc
+Preferred-Languages: en,ee
+Canonical: https://hen.ee/security.txt

@@ -45,17 +45,17 @@
   
 /* cousine-700 - latin */
 @font-face {
-    font-family: 'Cousine';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('../fonts/cousine-v16-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('fonts/cousine-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cousine-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/cousine-v16-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('fonts/cousine-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cousine-v16-latin-700.svg#Cousine') format('svg'); /* Legacy iOS */
+   font-family: 'Cousine';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url('../fonts/cousine-v16-latin-700.eot'); /* IE9 Compat Modes */
+   src: local(''),
+      url('fonts/cousine-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/cousine-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/cousine-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+      url('fonts/cousine-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('fonts/cousine-v16-latin-700.svg#Cousine') format('svg'); /* Legacy iOS */
   }
   
 /* Mobile */
@@ -107,11 +107,20 @@ h2 {
 }
 
 header {
-    position: sticky;
+    /* position: sticky;
     position: -webkit-sticky; /* Safari */
     top: 0;
     background-color: white;
     padding: 0 0 15px 0;
+    display: flex;
+}
+
+.header-image {
+    width: 200px;
+}
+
+.aboutme {
+   width: 100%; /* change */
 }
 
 .header-text {
@@ -152,6 +161,28 @@ a:hover {
     color: #004D9E;
 }
 
+/*.outside::after {
+   content: "";
+   background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'>  <path fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/><path fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/></svg>");
+   display: inline-block;
+   position: relative;
+   width: 1em;
+   height: 1em;
+   top: 2px;
+   left: 2px;
+}
+
+.down::after {
+   content: "";
+   background-image: url("<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z'/><path fill-rule='evenodd' d='M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z'/></svg>");
+   display: inline-block;
+   position: relative;
+   width: 1em;
+   height: 1em;
+   top: 2px;
+   left: 2px;
+}*/
+
 #entry {
     padding: 0 12px;
     font-family: 'Playfair Display', serif;
@@ -174,7 +205,7 @@ hr {
     display: flex;
     border: 0.2rem dotted;
     padding: 0.06rem;
-    margin: 35px 30px;
+    margin: 30px 30px;
     color: #A5A5A5;
     z-index: -1;
 }
