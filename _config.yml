@@ -12,13 +12,25 @@ lang: en-US
 timezone: Europe/London
 
 aboutme-text: >-
-  <p>Mainly focusing on frontend web design, I'm currently studying to become a full-stack developer. Alongside I manage my own <a href="">online instances</a> of free and open source web applications.</p>
+  <p>Mainly focusing on frontend web design, I'm currently studying to become a full-stack developer. Alongside I manage my own <a href="list-of-my-online-instances">online instances</a> of free and open source web applications.</p>
 
   <p>When I'm not, however, I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological talk but could extend to a disquisition into random cultural topics.</p>
 
   <p>Send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a>, optionally encrypt it with <a href="https://hen.ee/hen.asc">GPG</a>.</p>
 
   <p>This website is <a class="outside" href="https://github.com/tenseoverflow/hen.ee">open-source</a> and runs on <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/">sustainable energy</a>.</p>
+
+# estonian
+aboutme-est: >-
+  Veebidisainer ja -arendaja.
+aboutme-text-est: >-
+  <p>Tegelen peamiselt veebidisaini ja -arendusega. Haldan vabal ajal <a href="list-of-my-online-instances">servereid</a>.</p>
+
+  <p>Vahest kirjutan <a href="#recents" class="down">blogisse</a> midagi huvitavat, peamiselt inglise keeles, aga kui jõuan siis ka eesti keeles.</p>
+
+  <p>Saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+
+  <p>Veebisait on <a class="outside" href="https://github.com/tenseoverflow/hen.ee">avatud lähtekoodiga</a> ja kasutab <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/">jätkusuutliku energiat</a>.</p>
 
 author: Henri
 social:
