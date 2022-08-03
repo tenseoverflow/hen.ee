@@ -1,13 +1,27 @@
-/* body & root */
-
-[data-theme="dark"] body,
-[data-theme="dark"] header {
-  background-color: #121212;
-  color: #d2d2d2;
-}
+/* dark theme */
 
 [data-theme="dark"] :root {
   color-scheme: dark;
+  --text: #d2d2d2;
+  --bg: #121212;
+  --alt-colour: #cc933d;
+  --footer: #a5a5a5;
+  --paginator: #262626;
+  --link: #ffb84d;
+  --link-hover: #cc933d;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] header {
+  background-color: var(--bg);
+  color: var(--text);
+  --text: #d2d2d2;
+  --bg: #121212;
+  --alt-colour: #cc933d;
+  --footer: #a5a5a5;
+  --paginator: #262626;
+  --link: #ffb84d;
+  --link-hover: #cc933d;
 }
 
 /* headers */
@@ -28,21 +42,16 @@
 
 [data-theme="dark"] a,
 [data-theme="dark"] a:visited {
-  color: #ffb84d;
-  text-decoration-color: #ffb84d;
+  color: var(--link);
+  text-decoration-color: var(--link);
 }
 
 [data-theme="dark"] a:hover {
-  color: #cc933d;
-}
-
-[data-theme="dark"] .focused {
-  color: #cc933d;
-  font-weight: bold;
+  color: var(--link-hover);
 }
 
 [data-theme="dark"] #theme-toggle {
-  color: #d2d2d2;
+  color: var(--text);
 }
 
 [data-theme="dark"] .moon {
@@ -56,35 +65,27 @@
 /* dotted divider */
 
 [data-theme="dark"] hr {
-  color: #cc933d;
+  color: var(--alt-colour);
 }
 
 /* paginator */
 
 [data-theme="dark"] .paginator {
-  background: #262626;
+  background: var(--paginator);
   -webkit-box-shadow: 12px 12px 24px #0f0f0f, -12px -12px 24px #151515;
   box-shadow: 12px 12px 24px #0f0f0f, -12px -12px 24px #151515;
 }
 
 [data-theme="dark"] .outside::after {
-  content: "";
   background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23ffb84d' xmlns='http://www.w3.org/2000/svg'>  <path fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/><path fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/></svg>");
-  display: inline-block;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  top: 2px;
-  left: 2px;
 }
 
 [data-theme="dark"] .down::after {
-  content: "";
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffb84d' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'/></svg>");
-  display: inline-block;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  top: 2px;
-  left: 2px;
+}
+
+/* footer */
+
+[data-theme="dark"] .main-footer p {
+  color: var(--footer);
 }

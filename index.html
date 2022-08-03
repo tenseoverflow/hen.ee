@@ -1,5 +1,5 @@
 ---
-title: Henri
+title: Henri Aunin
 layout: default
 ---
 
@@ -9,12 +9,7 @@ layout: default
   </div>
 
   <div class="aboutme">
-    <button
-      title="toggle theme"
-      style="margin-top: 25px"
-      id="theme-toggle"
-      onclick="modeSwitcher()"
-    >
+    <button title="toggle theme" id="theme-toggle" onclick="modeSwitcher()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -40,24 +35,21 @@ layout: default
         />
       </svg>
     </button>
-    <button
-      title="estonian"
-      style="float: right; margin: 25px 0 0 0; height: 30px; width: 30px"
-    >
-      <a href="/et" style="font-size: 20px; text-decoration: none"
-        >&#x1f1ea;&#x1f1ea;</a
-      >
+    <button title="estonian">
+      <a href="/et">
+        <img
+          src="images/estonia.png"
+          width="22px"
+          height="17px"
+          style="border-radius: 5px; margin-top: 2px; border: 1px solid #121212;"
+          alt="EST"
+        />
+      </a>
     </button>
 
-    <h1 class="header-text">Henri</h1>
+    <h1 class="header-text">{{ site.author }}</h1>
 
     <p class="aboutme-text">{{ site.aboutme }}</p>
-
-    <!--<nav>
-      <p>
-      <a href="#blog">blog <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">   <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/> </svg></a> 
-      </p>
-      </nav>-->
   </div>
 </header>
 
@@ -89,10 +81,23 @@ layout: default
     {% for post in site.posts %}
     <li>
       <time datetime="{{ post.date | date_to_xmlschema }}"
-        >{{ post.date | date: "%d %b %Y" }}</time
+        >{{ post.date | date: "%b %d, %Y" }}</time
       >
       &#8212; <a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
 </div>
+
+<footer class="main-footer">
+  <p>
+    This website is
+    <a class="outside" href="https://github.com/tenseoverflow/hen.ee"
+      >open-source</a
+    >
+    and runs on
+    <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/"
+      >sustainable energy</a
+    >.
+  </p>
+</footer>

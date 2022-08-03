@@ -1,3 +1,12 @@
+:root {
+  --text: rgb(56, 56, 56);
+  --bg: #fff;
+  --alt-colour: #a5a5a5;
+  --footer: #666;
+  --link: #0066cc;
+  --link-hover: #004d9e;
+}
+
 /* playfair-display-500 - latin */
 @font-face {
   font-family: "Playfair Display";
@@ -100,153 +109,71 @@
 
 body {
   margin: 6em auto;
-  max-width: 650px;
+  max-width: 600px;
   line-height: 1.6;
-  color: rgb(56, 56, 56);
+  color: var(--text);
+  background-color: var(--bg);
   padding: 0 10vw;
-  font-family: "Cousine", monospace;
+  font-family: 'Cousine', mono;
+  font-size: 18px;
+  word-wrap: break-word;
 }
+
+/* Headings */
 
 h1,
 h2 {
   font-family: "Playfair Display", serif;
-  text-decoration-color: #0066cc;
-  color: rgb(56, 56, 56);
+}
+
+/* should be .header-text */
+h1 {
+  font-style: italic;
+  font-size: 2.2em;
+  margin: 0;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 1.6em;
 }
+
+/* Header */
 
 header {
-  /* position: sticky;
-    position: -webkit-sticky; /* Safari */
-  top: 0;
-  background-color: white;
   display: flex;
-}
-
-.aboutme {
-  width: 100%;
 }
 
 .header-image {
   padding-right: 1.5em;
-  margin-top: 1em;
 }
 
 .header-image img {
   width: 8em;
   height: 8em;
   border-radius: 100%;
-  box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.5)
+  box-shadow: 0px 0px 50px -15px rgba(0, 0, 0, 0.5);
 }
 
-.header-text {
-  font-style: italic;
-  font-size: 27px;
-  text-decoration-color: #0066cc;
-  color: rgb(56, 56, 56);
-}
-
-.focused {
-  color: #595959;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-a.focused:hover {
-  color: #595959;
-}
-
-#recents {
-  list-style-type: none;
-}
-
-p,
-a,
-li {
-  font-size: 14px;
-  word-wrap: break-word;
-}
-
-li {
-  line-height: 2;
-}
-
-a,
-a:visited {
-  color: #0066cc;
-}
-
-a:hover {
-  color: #004d9e;
-}
-
-.outside::after {
-  content: "";
-  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%230066cc' xmlns='http://www.w3.org/2000/svg'>  <path fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/><path fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/></svg>");
-  display: inline-block;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  top: 2px;
-  left: 1.8px;
-}
-
-.down::after {
-  content: "";
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%230066cc' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'/></svg>");
-  display: inline-block;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  top: 3px;
-  left: 1px;
-}
-
-#entry {
-  padding: 0 12px;
-  font-family: "Playfair Display", serif;
-  line-height: 1.4;
-}
-
-small {
-  font-size: smaller;
-}
-
-sup a {
-  text-decoration: none;
-}
-
-/* Dotted divider */
-
-hr {
-  position: relative;
-  bottom: 8px;
-  display: flex;
-  border: 0.2rem dotted;
-  padding: 0.06rem;
-  margin: 3em;
-  color: #a5a5a5;
-  z-index: -1;
+.aboutme-text {
+  width: 100%;
+  margin: 0;
+  margin-top: 0.5em;
 }
 
 /* Buttons */
 
 button {
   background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 100%;
 }
 
 button:hover {
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  border: none;
   cursor: pointer;
+  outline: 0;
+  background: hsl(0 0% 50% / 0.15);
 }
 
 button:active {
@@ -258,14 +185,17 @@ button:focus {
   outline: 0;
 }
 
-/* Theme changer */
+header button {
+  float: right;
+  margin-top: 1.2em;
+  height: 3em;
+  width: 3em;
+}
+
+/* Theme changer button */
 
 #theme-toggle {
-  float: right;
   color: #383838;
-  border-radius: 100%;
-  height: 30px;
-  width: 30px;
 }
 
 .sun {
@@ -278,24 +208,93 @@ button:focus {
   display: inline;
 }
 
-#theme-toggle:hover {
-  outline: 0;
-  background: hsl(0 0% 50% / 0.15);
+/* Dotted divider */
+
+hr {
+  color: var(--alt-colour);
+  position: relative;
+  bottom: 8px;
+  display: flex;
+  border: 0.2rem dotted;
+  padding: 0.06rem;
+  margin: 3em;
+  z-index: -1;
+}
+
+/* lists */
+
+li {
+  line-height: 2;
+}
+
+/* links */
+a,
+a:visited {
+  color: var(--link);
+  transition; color .3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.outside::after {
+  content: "";
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%230066cc' xmlns='http://www.w3.org/2000/svg'>  <path fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/><path fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/></svg>");
+  display: inline-block;
+  position: relative;
+  width: 0.85em;
+  height: 0.85em;
+  top: 0.1em;
+  left: 0.1em;
+}
+
+.down::after {
+  content: "";
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%230066cc' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'/></svg>");
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  top: 0.2em;
+  left: 0.1em;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+/* Footer */
+
+.main-footer p {
+  margin: 6em 0 0 0;
+  color: var(--footer);
+  font-size: 0.95em;
 }
 
 /* Mobile */
 
 /* @media only screen and (max-height: 900px) { */
 /*   body { */
-/*     margin: 3em auto 10vw auto; */
+/*     margin: 3em auto 8vw auto; */
 /*   } */
 /* } */
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 450px) {
   header {
     display: block;
+    top: 0;
+    background-color: white;
+  }
+  header button {
+    margin-top: 1em;
+    float: right;
+    height: 3em;
+    width: 3em;
   }
   body {
     margin: 3em auto 10vw auto;
+    top: 0;
+    background-color: var(--bg);
   }
 }
