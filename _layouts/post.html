@@ -44,9 +44,6 @@ layout: compress
         <div class="authordate"  style="balance-text">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
             <p style="font-style: italic; margin:0;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
-            <section style="font-style: italic; font-size: 16px;">
-                <p>Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-            </section>
         </div>
 
         {% include blog_footer.html  %}

@@ -1,3 +1,15 @@
+:root {
+  --text: rgb(56, 56, 56);
+  --bg: #fff;
+  --alt-colour: #a5a5a5;
+  --paginator: #f6f6f6;
+  --paginator-shadow: #d1d1d1;
+  --link: #0066cc;
+  --link-hover: #004d9e;
+  --code-bg: #2d3339;
+  --code: #aaa;
+}
+
 /* playfair-display-500 - latin */
 @font-face {
   font-family: "Playfair Display";
@@ -167,7 +179,7 @@
 /* Body */
 
 body {
-  margin: 8em auto;
+  margin: 2.8em auto 3em auto;
   padding: 0px 12vw;
   max-width: 700px;
   min-width: 50px;
@@ -177,7 +189,7 @@ body {
   text-align: justify;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
-  font-size: 19px;
+  font-size: 20px;
 }
 
 p {
@@ -185,14 +197,14 @@ p {
 }
 
 a,
-a:visited,
-button {
-  color: #0066cc;
-  text-decoration-color: #0051a3;
+a:visited {
+  color: var(--link);
+  transition: .2s ease;
 }
-a:hover,
-button:hover {
-  color: #004d9e;
+
+a:hover {
+  color: var(--link-hover);
+  transition: .2s ease;
 }
 
 /* Header stuff */
@@ -208,7 +220,7 @@ header .author {
   font-size: 1.2em;
 }
 
-/* Footer & Big website heading */
+/* Footer */
 
 footer {
   font-family: "Playfair Display", serif;
@@ -219,6 +231,8 @@ footer {
   font-size: 2.25rem;
 }
 
+/* Title */
+
 .header-text {
   font-style: italic;
   font-size: 2em;
@@ -226,15 +240,15 @@ footer {
   padding: 0;
 }
 
+/* Author with date (before footer) */
+
 .author,
 .author-footer {
   font-style: italic;
-  text-decoration-color: #0066cc;
+  text-decoration-color: var(--link);
   color: rgb(56, 56, 56);
   margin: 0;
 }
-
-/* Author with date (before footer) */
 
 .authordate {
   font-weight: 600;
@@ -248,11 +262,11 @@ footer {
   display: flex;
   position: relative;
   padding: 1.75em;
-  background: #f6f6f6;
+  background: var(--paginator);
   border-radius: 25px;
-  margin: 0 0 50px 0;
-  -webkit-box-shadow: 12px 12px 24px #d1d1d1, -12px -12px 24px #ffffff;
-  box-shadow: 12px 12px 24px #d1d1d1, -12px -12px 24px #ffffff;
+  margin: 0 0 3em 0;
+  -webkit-box-shadow: 12px 12px 24px var(--paginator-shadow), -12px -12px 24px #ffffff;
+  box-shadow: 12px 12px 24px var(--paginator-shadow), -12px -12px 24px #ffffff;
 }
 
 .paginator p {
@@ -319,12 +333,11 @@ h6 {
 
 hr {
   margin: 60px 30px;
-  /* color:  #edeff0  rgba(199, 199, 199, 0.801); */
   display: flex;
   bottom: 8px;
   border: 0.2rem dotted;
   padding: 0.06rem;
-  color: #a5a5a5;
+  color: var(--alt-colour);
   z-index: -1;
 }
 
@@ -441,9 +454,9 @@ blockquote {
 /* Code */
 
 code {
-  background: #2d3339;
+  background: var(--code-bg);
   border-radius: 2px;
-  color: #aaa;
+  color: var(--code);
   font-family: "Hasklig", monospace;
   font-size: 0.95rem;
   margin: 0 0.2rem;
@@ -452,7 +465,7 @@ code {
 }
 
 article > pre {
-  background: #2d3339;
+  background: var(--code-bg);
   font-family: "Hasklig", monospace;
   margin-bottom: var(--line-height);
   padding: calc(0.5 * var(--line-height)) 1.2rem;
@@ -512,32 +525,26 @@ article > pre code {
   color: #e16a72;
 }
 
-/* Mobile */
-
-@media only screen and (max-height: 550px) {
-  body {
-    margin: 2em auto 10vw auto;
-  }
-  .header-text {
-    font-size: 1.75em;
-  }
-}
-
 /* Button */
 
 button {
   background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 100%;
+  transition: .6s ease;
   box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
   text-shadow: 0px 0px 0px transparent;
 }
 
 button:hover {
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  border: none;
   cursor: pointer;
+  outline: 0;
+  background: hsl(0 0% 50% / 0.15);
+  transition: .6s ease;
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 button:active {
@@ -553,7 +560,7 @@ button:focus {
 
 #theme-toggle {
   float: right;
-  color: #383838;
+  color: var(--text);
   position: relative;
   top: 20px;
   border-radius: 100%;
@@ -574,4 +581,15 @@ button:focus {
 #theme-toggle:hover {
   outline: 0;
   background: hsl(0 0% 50% / 0.15);
+}
+
+/* Mobile */
+
+@media only screen and (max-height: 450px) {
+  body {
+    margin: 2em auto 10vw auto;
+  }
+  .header-text {
+    font-size: 1.75em;
+  }
 }

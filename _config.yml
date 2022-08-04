@@ -14,9 +14,9 @@ timezone: Europe/London
 aboutme-text: >-
   <p>Mainly focusing on frontend web design. Alongside I manage my own <a href="list-of-my-online-instances">online instances</a> of free and open source web applications.</p>
 
-  <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological talk but could extend to a disquisition into random cultural topics.</p>
+  <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological talk but could extend to a disquisition into random personal topics.</p>
 
-  <p>You can find me on <a class="outside" href="https://twitter.com/henriaunin">Twitter</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+  <p>Find me on <a class="outside" href="https://twitter.com/henriaunin">Twitter</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 # estonian
 aboutme-est: >-
@@ -26,14 +26,17 @@ aboutme-text-est: >-
 
   <p>Vahest kirjutan <a href="#recents" class="down">blogisse</a> midagi huvitavat, peamiselt inglise keeles, aga kui jõuan siis ka eesti keeles.</p>
 
-  <p>Saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
-
-  <p>Veebisait on <a class="outside" href="https://github.com/tenseoverflow/hen.ee">avatud lähtekoodiga</a> ja kasutab <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/">jätkusuutliku energiat</a>.</p>
+  <p>Jälgi mind <a class="outside" href="https://twitter.com/henriaunin">Twitteris</a> või saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 author: Henri Aunin
 social:
   links:
     - https://github.com/tenseoverflow
+twitter:
+  username: henriaunin
+  card: summary
+
+logo: /images/day-400-nohill.png
 
 # Build settings
 #theme: default

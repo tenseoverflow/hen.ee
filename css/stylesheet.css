@@ -109,7 +109,7 @@
 
 body {
   margin: 6em auto;
-  max-width: 600px;
+  max-width: 40em;
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
@@ -167,6 +167,9 @@ button {
   box-shadow: none;
   border: none;
   border-radius: 100%;
+  transition: .6s ease;
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 button:hover {
@@ -174,6 +177,9 @@ button:hover {
   cursor: pointer;
   outline: 0;
   background: hsl(0 0% 50% / 0.15);
+  transition: .6s ease;
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 button:active {
@@ -215,9 +221,9 @@ hr {
   position: relative;
   bottom: 8px;
   display: flex;
-  border: 0.2rem dotted;
-  padding: 0.06rem;
-  margin: 3em;
+  border: 0.2em dotted;
+  padding: 0.06em;
+  margin: 2.8em;
   z-index: -1;
 }
 
@@ -231,11 +237,12 @@ li {
 a,
 a:visited {
   color: var(--link);
-  transition; color .3s ease;
+  transition: .2s ease;
 }
 
 a:hover {
   color: var(--link-hover);
+  transition: .2s ease;
 }
 
 .outside::after {

@@ -28,19 +28,31 @@ layout: compress
       </style>
     </noscript>
 
-    {% if site.tags != "" %} {% assign rawtags = "" %} {% for post in site.posts
-    %} {% assign ttags = post.tags | join:'|' | append:'|' %} {% assign rawtags
-    = rawtags | append:ttags %} {% endfor %} {% assign rawtags = rawtags |
-    split:'|' | sort %} {% assign site.tags = "" %} {% for tag in rawtags %} {%
-    if tag != "" %} {% if tags == "" %} {% assign tags = tag | split:'|' %} {%
-    endif %} {% unless tags contains tag %} {% assign tags = tags | join:'|' |
-    append:'|' | append:tag | split:'|' %} {% endunless %} {% endif %} {% endfor
-    %} {% endif %} {% feed_meta %}
+  {% if site.tags != "" %}
+  {% assign rawtags = "" %}
+  {% for post in site.posts %}
+    {% assign ttags = post.tags | join:'|' | append:'|' %}
+    {% assign rawtags = rawtags | append:ttags %}
+  {% endfor %}
+  {% assign rawtags = rawtags | split:'|' | sort %}
+
+  {% assign site.tags = "" %}
+  {% for tag in rawtags %}
+    {% if tag != "" %}
+      {% if tags == "" %}
+        {% assign tags = tag | split:'|' %}
+      {% endif %}
+      {% unless tags contains tag %}
+        {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% endif %}
 
     <meta name="generator" content="Jekyll v4.2.2" />
-    <meta property="og:title" content="hen.ee" />
+    <meta property="og:title" content="Henri Aunin" />
     <meta name="author" content="{{ site.author }}" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="et" />
     <meta name="description" content="{{ site.aboutme-est }}" />
     <meta property="og:description" content="{{ site.aboutme-est }}" />
     <link rel="canonical" href="https://hen.ee/et/" />
@@ -48,17 +60,19 @@ layout: compress
     <meta property="og:site_name" content="hen.ee" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="hen.ee" />
+    <meta property="twitter:title" content="Henri Aunin" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "author": { "@type": "Person", "name": "{{ site.author }}" },
         "description": "{{ site.aboutme-est }}",
-        "headline": "hen.ee",
+        "headline": "Henri Aunin",
         "url": "https://hen.ee/et/"
       }
     </script>
+    
+  
   </head>
   <body>
     <main>
@@ -165,15 +179,8 @@ layout: compress
   </body>
 </html>
 
-<footer>
+<footer class="main-footer">
   <p>
-    This website is
-    <a class="outside" href="https://github.com/tenseoverflow/hen.ee"
-      >open-source</a
-    >
-    and runs on
-    <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/"
-      >sustainable energy</a
-    >.
+    Veebisait on <a class="outside" href="https://github.com/tenseoverflow/hen.ee">avatud lähtekoodiga</a> ja kasutab <a class="outside" href="https://www.websitecarbon.com/website/hen-ee/">jätkusuutliku energiat</a>.
   </p>
 </footer>
