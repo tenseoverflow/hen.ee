@@ -3,7 +3,7 @@ email: contact@hen.ee
 aboutme: >-
   Student, frontend web developer and Linux sysadmin based in Estonia.
 description: Student, frontend web developer and Linux sysadmin based in Estonia. 
-tagline: Frontend developer and Linux sysadmin based in Estonia.
+tagline: Frontend web developer and Linux sysadmin.
 baseurl: "" 
 url: "https://hen.ee" 
 permalink: "https://hen.ee/"
@@ -32,6 +32,7 @@ author: Henri Aunin
 social:
   links:
     - https://github.com/tenseoverflow
+    - https://twitter.com/henriaunin
 twitter:
   username: henriaunin
   card: summary
