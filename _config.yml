@@ -16,7 +16,7 @@ aboutme-text: >-
 
   <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological ramblings but could extend to a disquisition into random personal topics.</p>
 
-  <p>Find me on <a class="outside" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a class="outside" href="https://twitter.com/henriaunin">Twitter</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+  <p>Find me on <a class="outside" rel="me" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a class="outside" href="https://twitter.com/henriaunin">Twitter</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 # estonian
 aboutme-est: >-
