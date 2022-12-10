@@ -17,8 +17,8 @@ Coming to a more mysterious tone, Spielchen und Rechnenschaft features American 
 
 The fifth piece of the album is Partly Clouded, which is quite fast-paced and features a repetitive theme across the whole piece. The ensemble's troubled harmony surrounds the piano's running melody.  Energetic and well-executed, creates interesting suspense during the entire piece.
 
-Then we get a much-needed pause and head into a joyful piece called Pippi Longstocking. My personal favourite, due to its fun melody or that it's an Estonian childhood classic and I loved the story. Or maybe that romantic interlude with the piano and the solo trumpet. 
- 
+Then we get a much-needed pause and head into a joyful piece called Pippi Longstocking. My personal favourite, due to its fun melody or that it's an Estonian childhood classic and I loved the story. Or maybe that romantic interlude with the piano and the solo trumpet.
+
 After that, it heads right back into Lünk, a very technical and serious piece. Continuing with melancholic Valse Hésitante and ending with a playful piece, Sheep Song.
 
 Overall I recommend giving it a listen for all jazz listeners. Kristjan Randalu, in my opinion, is one of the best jazz pianists out there and also knows quite well how to work with a bigger ensemble, even if it's his first album with one. It's a joy to listen to.
