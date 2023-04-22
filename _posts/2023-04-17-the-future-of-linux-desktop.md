@@ -1,7 +1,8 @@
 ---
 title: "The Future of Linux Desktop: Containers"
 layout: post
-description: Fedora Silverblue is changing. A reliable, immutable and flexible Linux distro. Cloud native desktop model is here.
+description: Fedora Silverblue is changing. A reliable, immutable and flexible
+  Linux distro. Cloud native desktop model is here.
 summary: New changes related to Fedora Silverblue. Cloud Native Desktop.
 tags: 2023 technology
 minute: 3
