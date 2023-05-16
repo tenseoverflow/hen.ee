@@ -1,5 +1,5 @@
 ---
-title: "Don't Trust Oracle Cloud Free tier"
+title: "Don't Trust Oracle Cloud Free Tier"
 layout: post
 description: A week ago I went on a trip and suddenly found out that none of my self-hosted services that are hosted on Oracle Cloud work. Turns out, Oracle Cloud deleted my account with no warning.
 summary: A warning to all trying out Oracle Cloud Free Tier.
