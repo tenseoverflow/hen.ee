@@ -1,7 +1,7 @@
 title: hen.ee
 email: contact@hen.ee
 aboutme: >-
-  Student, frontend web developer and Linux sysadmin based in Estonia.
+  Student, frontend web developer and Linux sysadmin based in Tallinn, Estonia.
 description: Student, frontend web developer and Linux sysadmin based in Estonia. 
 tagline: Frontend web developer and Linux sysadmin.
 baseurl: "" 
@@ -12,21 +12,21 @@ lang: en-US
 timezone: Europe/London
 
 aboutme-text: >-
-  <p>Mainly my expertise is in frontend web development. I sometimes tinker with Linux and open-source software, <a href="https://hen.ee/list-of-my-online-instances/">host things on my servers</a> and keen on learning new technology. Or on how old technology and methods can still suit us better in our age.</p>
+  <p>Mainly my expertise is in frontend web development. I sometimes tinker with Linux, open-source software and servers. I am keen on learning new technology or on how old technology can still suit us better even today.</p>
 
-  <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological ramblings but could extend to a discussion into random personal topics. I'm also quite interested in the privacy of technology, self-hosting and web decentralisation.</p>
+  <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological ramblings but could extend to a discussion into random personal topics. I'm also quite interested in internet privacy, self-hosting and web decentralisation.</p>
 
-  <p>Find me on <a class="outside" rel="me" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a class="outside" href="https://twitter.com/henriaunin">Twitter</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+  <p>Find me on <a class="outside" rel="me" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a class="outside" href="https://github.com/tenseoverflow">Github</a> or send me an e-mail to <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 # estonian
 aboutme-est: >-
-  Veebidisainer ja -arendaja.
+  Veebidisainer ja arendaja Tallinnast.
 aboutme-text-est: >-
   <p>Tegelen peamiselt veebidisaini ja -arendusega. Vahest ka <i>open-source</i> tarkvaraga ning Linuxiga.</p>
 
   <p>Vahest kirjutan <a href="#recents" class="down">blogisse</a> midagi huvitavat. Peamiselt inglise keeles, aga kui jõuan, siis ka eesti keeles.</p>
 
-  <p>Jälgi mind <a class="outside" href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a class="outside" href="https://twitter.com/henriaunin">Twitteris</a> või saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+  <p>Jälgi mind <a class="outside" href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a class="outside" href="https://github.com/tenseoverflow">Githubis</a> või saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 author: Henri Aunin
 social:
