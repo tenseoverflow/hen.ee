@@ -22,6 +22,10 @@ layout: compress
                 }
             </style>
         </noscript>
+
+        <script>
+            if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+        </script>
     </head>
     <body>
 
@@ -45,6 +49,15 @@ layout: compress
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
             <p style="font-style: italic; margin:0; display: none;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
         </div>
+
+        <script src="https://utteranc.es/client.js"
+                repo="tenseoverflow/hen.ee"
+                issue-term="og:title"
+                label="Be respectful and use common sense"
+                theme="preferred-color-scheme"
+                crossorigin="anonymous"
+                async>
+        </script>
 
         {% include blog_footer.html  %}
 

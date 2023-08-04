@@ -22,6 +22,10 @@ layout: compress
          </style>
       </noscript>
 
+      <script>
+         if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+      </script>
+
    {% if site.tags != "" %}
    {% assign rawtags = "" %}
    {% for post in site.posts %}
