@@ -1,4 +1,4 @@
-![hen.ee webpage](https://cloud.hen.ee/apps/sharingpath/hen/Fotod/hen-ee.png)
+# hen.ee
 
 Website hosted on https://hen.ee. For more info take a look in there. I use this repository for CI/CD.
 
@@ -13,8 +13,7 @@ Assuming you have Ruby installed, you can run locally using these commands:
 $ git clone https://github.com/tenseoverflow/hen.ee
 $ cd ./hen.ee
 $ bundle install
-$ jekyll build
-$ jekyll serve
+$ bundle exec jekyll serve
 ```
 
 To deploy, use a CDN (like GitHub Pages or Cloudflare Pages) or hosting provider of your choice.
@@ -26,3 +25,4 @@ Website licensed under GPL 3.0. Content is allowed to modify and distribute, yet
 ## Credits
 
 [Text Balancer](https://codeberg.org/da/text-balancer) licensed under the Apache License 2.0.
+[Utterances](https://utteranc.es/) licensed under the MIT License.
