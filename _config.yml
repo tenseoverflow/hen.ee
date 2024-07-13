@@ -1,35 +1,44 @@
 title: hen.ee
 email: contact@hen.ee
-aboutme: >- # this means to ignore newlines until "baseurl:"
-  <p>Hi, I'm <b>Henri</b>, a student developer, a privacy & open-source supporter and a digital independent<sup><a href="https://videos.lukesmith.xyz/w/p/tY3gztq1BN3FYiDSxQKq7B">*</a></sup>. I run this modest website called <i>hen.ee</i>.</p>
-
-  <p>I write in my blog about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological talk but could extend to a disquisition into random ideas and cultural topics.</p>
-
-  <p>This website is <a href="https://github.com/tenseoverflow/hen.ee">open-source</a> and runs on <a href="https://www.websitecarbon.com/website/hen-ee/">sustainable energy</a>.</p>
-description: I am a developer, an online privacy supporter and a digital independent. In my blog, I write about technology, privacy and other things on my mind.
-tagline: A blog dedicated to my thoughts.
+aboutme: >-
+  Student, frontend web developer and Linux sysadmin based in Tallinn, Estonia.
+description: Student, frontend web developer and Linux sysadmin based in Estonia. 
+tagline: Frontend web developer and Linux sysadmin.
 baseurl: "" 
 url: "https://hen.ee" 
 permalink: "https://hen.ee/"
-permalink: pretty
+permalink: /:title/
 lang: en-US
 timezone: Europe/London
 
-author: Henri
+aboutme-text: >-
+  <p>Mainly my expertise is in frontend web development. I sometimes tinker with Linux, open-source software and servers. I am keen on learning new technology or on how old technology can still suit us better even today.</p>
+
+  <p>Sometimes I write <a class="down" href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy technological ramblings but could extend to a discussion into random personal topics. I'm also quite interested in internet privacy, self-hosting and web decentralisation.</p>
+
+  <p>Find me on <a class="outside" rel="me" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a class="outside" rel="me" href="https://github.com/tenseoverflow">Github</a> or send me an e-mail to <a href="mailto:contact@hen.ee" rel="me">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+
+# estonian
+aboutme-est: >-
+  Veebidisainer ja arendaja Tallinnast.
+aboutme-text-est: >-
+  <p>Tegelen peamiselt veebidisaini ja -arendusega. Vahest ka <i>open-source</i> tarkvaraga ning Linuxiga.</p>
+
+  <p>Vahest kirjutan <a href="#recents" class="down">blogisse</a> midagi huvitavat. Peamiselt inglise keeles, aga kui jõuan, siis ka eesti keeles.</p>
+
+  <p>Jälgi mind <a class="outside" href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a class="outside" href="https://github.com/tenseoverflow">Githubis</a> või saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
+
+author: Henri Aunin
 social:
   links:
     - https://github.com/tenseoverflow
-    - https://join.status.im/u/0x0423fc98719e5b46461de2cdb3f83f1d48e336ce46b5ae15f6bfd654b6b1fdd73380e23554449b55f0e1f5d4a6a0f6fa6edd2840152b91b0ae09f6a4dac690c28d
+    - https://twitter.com/henriaunin
+    - https://mastodon.social/@henriaunin
+twitter:
+  username: henriaunin
+  card: summary
 
-about:
-- title: status.im
-  url: https://a.hen.ee/statusim # TODO
-  name: '0x0423fc98719e5b46461de2cdb3f83f1d48e336ce46b5ae15f6bfd654b6b1fdd73380e23554449b55f0e1f5d4a6a0f6fa6edd2840152b91b0ae09f6a4dac690c28d'
-- title: Github
-  url: https://github.com/tenseoverflow
-  name: tenseoverflow
-- title: Discord
-  name: Straton of Stageira#6830
+logo: /images/day-400-nohill.png
 
 # Build settings
 #theme: default

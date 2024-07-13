@@ -10,8 +10,9 @@ layout: compress
         <link rel='stylesheet' type='text/css' href='/css/blogstyle.css'>
         <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
         <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="webmention" href="https://webmention.io/username/webmention" />
-        <link rel="pingback" href="https://webmention.io/username/xmlrpc" />
+        <!-- remove these -->
+        <link rel="webmention" href="https://webmention.io/hen.ee/webmention" />
+        <link rel="pingback" href="https://webmention.io/hen.ee/xmlrpc" />
         {% feed_meta %}
         {% seo %}
         
@@ -22,8 +23,13 @@ layout: compress
                 }
             </style>
         </noscript>
+
     </head>
     <body>
+        
+        <script>
+            if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+        </script>
 
         {% include blog_header.html %}
           
@@ -43,11 +49,17 @@ layout: compress
 
         <div class="authordate"  style="balance-text">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
-            <p style="font-style: italic; margin:0;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
-            <section style="font-style: italic; font-size: 16px;">
-                <p>Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-            </section>
+            <p style="font-style: italic; margin:0; display: none;">by <span itemprop="author" itemscope itemtype="https://schema.org/Person">{{ site.author }}</span></p>
         </div>
+
+        <script src="https://utteranc.es/client.js"
+                repo="tenseoverflow/hen.ee"
+                issue-term="og:title"
+                label="Be respectful and use common sense"
+                theme="preferred-color-scheme"
+                crossorigin="anonymous"
+                async>
+        </script>
 
         {% include blog_footer.html  %}
 

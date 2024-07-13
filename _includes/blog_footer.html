@@ -1,21 +1,19 @@
 <footer>
-  <hr>
+  <hr />
 
   <div class="paginator" style="balance-text">
-  {% if page.previous %}
-  <a class="previous" href="{{ page.previous | relative_url }}">
-    <span class="paginator-header" style="margin: 0;">Previous</span>
-    <p>{{ page.previous.title }}</p>
-  </a>
-  {% endif %} {% if page.next %}
-  <a class="next" href="{{ page.next | relative_url }}">
-    <span class="paginator-header" style="margin: 0;">Next</span>
-    <p>{{ page.next.title }}</p>
-  </a>
-  {% endif %}
+    {% if page.previous %}
+    <a class="previous" href="{{ page.previous | relative_url }}">
+      <span class="paginator-header" style="margin: 0">Previous</span>
+      <p>{{ page.previous.title }}</p>
+    </a>
+    {% endif %} {% if page.next %}
+    <a class="next" href="{{ page.next | relative_url }}">
+      <span class="paginator-header" style="margin: 0">Next</span>
+      <p>{{ page.next.title }}</p>
+    </a>
+    {% endif %}
   </div>
 
-  <span class="author-footer"><a class="author-footer" href="/index.html">hen.ee</a></span>
-  <br>
-  <a href="/contact.html">Contact</a> &#183; <a href="/feed.xml">RSS</a>
+  <a href="/">About</a> &#183; <a href="/feed.xml">RSS</a>
 </footer>
