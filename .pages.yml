@@ -31,8 +31,9 @@ content:
         label: Minute
         type: number
       - name: image
-        label: Image Cover
+        label: Image
         type: image
         list: true
-        options:
-          path: images
+      - name: layout
+        type: string
+        label: Layout
