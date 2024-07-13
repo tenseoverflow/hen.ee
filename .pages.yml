@@ -9,10 +9,6 @@ content:
     view:
       fields: [ title, published, date ]
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
       - name: date
         label: Date
         type: date
@@ -22,3 +18,15 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: description
+        label: Description
+        type: string
+      - name: summary
+        label: Summary
+        type: string
+      - name: tags
+        label: Tags
+        type: string
+      - name: minute
+        type: Minute
+        type: number
