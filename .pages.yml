@@ -33,7 +33,6 @@ content:
       - name: image
         label: Image
         type: image
-        list: true
       - name: layout
         type: string
         label: Layout
