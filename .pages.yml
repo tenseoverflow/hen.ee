@@ -28,5 +28,11 @@ content:
         label: Tags
         type: string
       - name: minute
-        type: Minute
+        label: Minute
         type: number
+      - name: image
+        label: Image Cover
+        type: image
+        list: true
+        options:
+          path: images
