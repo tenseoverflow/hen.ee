@@ -1,64 +1,53 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
-<html lang="en"> 
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{{ page.title }}</title> 
-      <link rel="stylesheet" type='text/css' href="/css/stylesheet.css">
-      <link rel="stylesheet" type='text/css' href="/css/dark.css">
-      <!-- remove these -->
-      <link rel="webmention" href="https://webmention.io/hen.ee/webmention" />
-      <link rel="pingback" href="https://webmention.io/hen.ee/xmlrpc" />
-      <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
-      <link rel="shortcut icon" href="/favicon.ico">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="/css/dark.css" />
+		<!-- remove these -->
+		<link rel="webmention" href="https://webmention.io/hen.ee/webmention" />
+		<meta name="fediverse:creator" content="@henriaunin@mastodon.social" />
 
-      <noscript>
-         <style>
-            .balance-text {
-               visibility: visible !important;
-            }
-         </style>
-      </noscript>
+		<link
+			rel="sitemap"
+			type="application/xml"
+			title="sitemap"
+			href="{{ site.baseurl }}/sitemap.xml"
+		/>
+		<link rel="shortcut icon" href="/favicon.ico" />
 
-   {% if site.tags != "" %}
-   {% assign rawtags = "" %}
-   {% for post in site.posts %}
-      {% assign ttags = post.tags | join:'|' | append:'|' %}
-      {% assign rawtags = rawtags | append:ttags %}
-   {% endfor %}
-   {% assign rawtags = rawtags | split:'|' | sort %}
+		<noscript>
+			<style>
+				.balance-text {
+					visibility: visible !important;
+				}
+			</style>
+		</noscript>
 
-    {% assign site.tags = "" %}
-    {% for tag in rawtags %}
-      {% if tag != "" %}
-         {% if tags == "" %}
-            {% assign tags = tag | split:'|' %}
-         {% endif %}
-         {% unless tags contains tag %}
-            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-         {% endunless %}
-      {% endif %}
-   {% endfor %}
-   {% endif %}
+		{% if site.tags != "" %} {% assign rawtags = "" %} {% for post in site.posts
+		%} {% assign ttags = post.tags | join:'|' | append:'|' %} {% assign rawtags
+		= rawtags | append:ttags %} {% endfor %} {% assign rawtags = rawtags |
+		split:'|' | sort %} {% assign site.tags = "" %} {% for tag in rawtags %} {%
+		if tag != "" %} {% if tags == "" %} {% assign tags = tag | split:'|' %} {%
+		endif %} {% unless tags contains tag %} {% assign tags = tags | join:'|' |
+		append:'|' | append:tag | split:'|' %} {% endunless %} {% endif %} {% endfor
+		%} {% endif %} {% feed_meta %} {% seo title=false %}
+	</head>
+	<body>
+		<script>
+			if (localStorage.theme)
+				document.documentElement.setAttribute("data-theme", localStorage.theme);
+		</script>
 
-   {% feed_meta %}
-   {% seo title=false %}
-   </head>
-   <body>
+		<main>{% include anchor_headings.html html=content anchorBody="#" %}</main>
 
-      <script>
-         if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
-      </script>
-
-      <main>
-         {% include anchor_headings.html html=content anchorBody="#" %}
-      </main>
-
-      <script src="/js/theme.js"></script>
-      <script src="/js/text-balancer.js"></script>
-
-   </body>
+		<script src="/js/theme.js"></script>
+		<script src="/js/text-balancer.js"></script>
+	</body>
 </html>

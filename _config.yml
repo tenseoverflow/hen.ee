@@ -29,16 +29,21 @@ aboutme-text-est: >-
   <p>Jälgi mind <a class="outside" href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a class="outside" href="https://github.com/tenseoverflow">Githubis</a> või saada e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a href="https://hen.ee/hen.asc">GPG</a>).</p>
 
 author: Henri Aunin
+
 social:
+  name: Henri Aunin
   links:
     - https://github.com/tenseoverflow
     - https://twitter.com/henriaunin
     - https://mastodon.social/@henriaunin
+
 twitter:
   username: henriaunin
   card: summary
 
 logo: /images/day-400-nohill.png
+
+image: /images/day-1500-500.png
 
 # Build settings
 #theme: default
