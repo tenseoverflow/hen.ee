@@ -12,12 +12,15 @@ content:
       - name: date
         label: Date
         type: date
+        required: true
       - name: title
         label: Title
         type: string
+        required: true
       - name: body
         label: Body
         type: rich-text
+        required: true
       - name: description
         label: Description
         type: string
@@ -36,6 +39,8 @@ content:
       - name: layout
         type: string
         label: Layout
+        default: post
+        required: true
   - name: config
     label: Jekyll config
     path: _config.yml
