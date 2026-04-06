@@ -10,3 +10,4 @@ tmp
 .git
 .vscode
 Gemfile.lock
+.bundle
