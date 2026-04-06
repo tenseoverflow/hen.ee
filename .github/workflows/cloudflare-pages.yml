@@ -1,0 +1,28 @@
+name: Cloudflare Pages build CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby (Cloudflare Pages compatible)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: false
+
+      - name: Install bundler
+        run: gem install bundler -v 2.3.16
+
+      - name: Install dependencies
+        run: bundle _2.3.16_ install
+
+      - name: Build site (Cloudflare Pages command)
+        run: bundle _2.3.16_ exec jekyll build
