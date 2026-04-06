@@ -21,6 +21,4 @@ jobs:
     - name: Install dependencies
       run: bundle _2.3.16_ install
     - name: Build the site (Cloudflare Pages-compatible)
-      env:
-        RUBY_VERSION: "3.2.2"
       run: bundle _2.3.16_ exec jekyll build
