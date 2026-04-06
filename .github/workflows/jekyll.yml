@@ -8,13 +8,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.4.4"
+        bundler-cache: false
+    - name: Install bundler
+      run: gem install bundler -v 2.6.9
+    - name: Install dependencies
+      run: bundle _2.6.9_ install
+    - name: Build the site (Cloudflare Pages-compatible)
+      run: bundle _2.6.9_ exec jekyll build
