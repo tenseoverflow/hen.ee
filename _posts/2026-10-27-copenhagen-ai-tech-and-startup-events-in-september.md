@@ -5,8 +5,7 @@ description: Last month, I attended four AI events in Copenhagen, each leaving
   me with something different to think about.
 summary: Last month, I attended four AI events in Copenhagen, each leaving me
   with something different to think about.
-tags: startup, technology
-image: /1792965698121.jpg
+tags: startup technology
 layout: post
 ---
 Last month, I attended four AI events in Copenhagen, each leaving me with something different to think about.
@@ -22,3 +21,8 @@ Builders & Brews introduced me to some interesting possibilities with Nebius and
 Furthermore, attended the [Bilt.me](http://Bilt.me) hackathon which actually surprised me in how well it has progressed when I first tried it couple months ago. The product felt amazing. Easy-to-use for vibe coding, yet also provided some serious mobile development opportunities for prototyping. I tried making an application for learning about investing and pensions in Estonia using native iOS components which worked surprisingly well.
 
 My biggest takeaway from the month: as building software becomes easier, knowing what to build, making good engineering decisions and automating the unnecessary become even more valuable.
+
+![Claude for Fintech fireside chat](/1792965698121.jpg)
+
+![](/1792965699669.jpg)
+
