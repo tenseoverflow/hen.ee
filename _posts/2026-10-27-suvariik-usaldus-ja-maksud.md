@@ -1,6 +1,6 @@
 ---
 date: 2026-10-26
-title: 🇪🇪 Süvariik, usaldus ja maksud
+title: 🇪🇪 Institutsioonide usaldus
 description: Eesti on liberaalse demokraatia indeksis teisel kohal, top 10
   maailma õigusriik, korruptsiooni tajuvuse indeksis 12. kohal jagades kohta
   Austraalia ja Iirimaaga ning samal ajal hoiame üpris väikest maksukoormat 35%
