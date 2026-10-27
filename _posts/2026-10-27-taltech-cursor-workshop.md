@@ -1,6 +1,6 @@
 ---
 date: 2026-06-06
-title: TalTech Cursor Workshop
+title: Hosted a Cursor Workshop at TalTech
 description: Last week, I got an unique experience to co-host a Cursor Lab at my
   university TalTech.
 summary: Last week, I got an unique experience to co-host a Cursor Lab at my
