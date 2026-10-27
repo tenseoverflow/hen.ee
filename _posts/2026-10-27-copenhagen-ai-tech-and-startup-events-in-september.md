@@ -1,5 +1,5 @@
 ---
-date: 2026-10-26
+date: 2026-10-27
 title: Copenhagen AI, Tech and Startup Events in September
 description: Last month, I attended four AI events in Copenhagen, each leaving
   me with something different to think about.
