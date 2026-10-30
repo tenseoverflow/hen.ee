@@ -1,0 +1,35 @@
+<section id="portfolio" aria-label="Portfolio">
+  <button class="portfolio-launch" aria-haspopup="dialog" aria-controls="portfolio-dialog">
+    <span class="portfolio-preview" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span><strong>Portfolio</strong><br>Explore my work <span aria-hidden="true">↗</span></span>
+  </button>
+  <dialog id="portfolio-dialog" aria-label="Portfolio projects">
+    <div class="portfolio-scroll" tabindex="0">
+      {% assign groups = "recent_work,other_projects" | split: "," %}
+      {% for group in groups %}
+      {% for item in site.data.portfolio[group].items %}
+      <div class="portfolio-step">
+        <article class="portfolio-card">
+          <button class="portfolio-close" aria-label="Close portfolio">×</button>
+          <p class="portfolio-dates">{{ item.dates }}</p>
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <div class="portfolio-links">{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }} ↗</a>{% endfor %}</div>
+        </article>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+    <nav class="portfolio-controls" aria-label="Project navigation"><button data-direction="-1" aria-label="Previous project">←</button><output aria-live="polite"></output><button data-direction="1" aria-label="Next project">→</button></nav>
+  </dialog>
+  <noscript>
+    <style>.portfolio-launch { display: none; }</style>
+    <h2>Portfolio</h2>
+    {% assign groups = "recent_work,other_projects" | split: "," %}
+    {% for group in groups %}{% for item in site.data.portfolio[group].items %}
+    <article><p>{{ item.dates }}</p><h3>{{ item.title }}</h3><p>{{ item.description }}</p>
+    {% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</article>
+    {% endfor %}{% endfor %}
+  </noscript>
+</section>
+<script src="/js/portfolio.js" defer></script>

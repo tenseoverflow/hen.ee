@@ -1,0 +1,56 @@
+recent_work:
+  intro: "Professional experience building distributed systems and product-facing web work."
+  items:
+    - dates: "June 2025 – December 2025"
+      title: "Volton Technology - Software Developer"
+      description: >
+        Developed a distributed smart energy management system for frequency-market
+        trading: Python AWS Lambda, NestJS/TypeScript, InfluxDB, and Modbus/MQTT IoT
+        integrations.
+      links:
+        - label: "Volton"
+          url: "https://volton.ee"
+
+other_projects:
+  intro: "Selected student, freelance, and personal projects from the last few years."
+  items:
+    - dates: "2025"
+      title: "Room Booking Application"
+      description: >
+        Led a team of three to build a room booking system with scheduling algorithms
+        for conflict resolution and room optimization. Figma, HTML, CSS, JavaScript.
+
+    - dates: "2025"
+      title: "Smart Recipe Book"
+      description: >
+        Full-stack recipe recommendation app using object-oriented design and efficient
+        data structures for ingredient matching. C#, .NET, SvelteKit.
+      links:
+        - label: "GitHub"
+          url: "https://github.com/tenseoverflow/retseptiraamat"
+
+    - dates: "2025"
+      title: "Asi Karikas CTF Learning Platform"
+      description: >
+        CTF learning environment built with a team of four for a TalTech competition.
+        Svelte, PHP.
+
+    - dates: "2024"
+      title: "Delyver Landing Page"
+      description: >
+        Freelance project: designed and built a startup landing page in SvelteKit.
+
+    - dates: "2023 – 2024"
+      title: "KIIPY"
+      description: >
+        NFC business card platform with a cost-optimized architecture: static CDN
+        front-end and lightweight backend. SvelteKit, TypeScript, Cloudflare, Fly.io.
+
+    - dates: "2019 – present"
+      title: "Homelab Infrastructure"
+      description: >
+        Self-hosted Kubernetes (k3s) and Docker Swarm, mail servers, and monitoring
+        with Prometheus, Loki, and Grafana.
+      links:
+        - label: "GitHub"
+          url: "https://github.com/tenseoverflow/infrastructure"

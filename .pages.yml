@@ -48,6 +48,18 @@ content:
         default: post
         required: true
         hidden: true
+  - name: portfolio
+    label: Portfolio cards
+    type: file
+    path: _data/portfolio.yml
+    format: yaml
+    fields:
+      - name: recent_work
+        label: Recent work
+        component: portfolio_group
+      - name: other_projects
+        label: Other projects
+        component: portfolio_group
   - name: config
     label: Jekyll config
     path: _config.yml
@@ -71,3 +83,47 @@ content:
         label: Logo image        
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
+
+components:
+  portfolio_group:
+    type: object
+    fields:
+      - name: intro
+        label: Section introduction
+        type: text
+        description: Saved for the section; not shown in the card modal.
+      - name: items
+        label: Cards
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        description: Cards appear in this order. Recent work comes before Other projects.
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: dates
+            label: Date or date range
+            type: string
+          - name: description
+            label: Description
+            type: text
+            required: true
+          - name: links
+            label: Project links
+            type: object
+            list:
+              collapsible:
+                summary: "{label}"
+            fields:
+              - name: label
+                label: Link text
+                type: string
+                required: true
+              - name: url
+                label: URL
+                type: string
+                required: true
