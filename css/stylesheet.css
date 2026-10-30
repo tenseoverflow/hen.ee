@@ -144,7 +144,7 @@ h2 {
 
 /* should be .header-text */
 h1 {
-  font-style: italic;
+  font-style: normal;
   font-size: 2.2em;
   margin: 0;
 }
@@ -289,9 +289,77 @@ sup a {
 /* Footer */
 
 .main-footer p {
-  margin: 6em 0 0 0;
+  margin: 2em 0 0 0;
   color: var(--footer);
   font-size: 0.95em;
+}
+
+/* Portfolio */
+
+#portfolio {
+  margin-top: 2.5em;
+}
+
+#portfolio h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#portfolio h2:first-child {
+  margin-top: 0;
+}
+
+.portfolio-intro {
+  color: var(--alt-colour);
+  margin: 0 0 1.5em;
+}
+
+.portfolio-item {
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-dates {
+  margin: 0 0 0.25em;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  color: var(--alt-colour);
+}
+
+.portfolio-body {
+  margin: 0 0 0.75em;
+}
+
+.portfolio-links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 0.75em;
+}
+
+.portfolio-link {
+  display: inline-block;
+  padding: 0.15em 0.65em;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--link);
+  border: 1px solid var(--link);
+  border-radius: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-link:hover {
+  color: var(--bg);
+  background-color: var(--link);
+  border-color: var(--link);
+}
+
+.portfolio-link.outside::after {
+  display: none;
 }
 
 /* Mobile */

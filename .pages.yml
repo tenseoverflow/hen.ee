@@ -1,6 +1,7 @@
 media:
   input: images
-  output: /
+  output: /images
+  categories: [image]
 content:
   - name: posts
     label: Posts
@@ -20,10 +21,14 @@ content:
       - name: body
         label: Body
         type: rich-text
+        options:
+          format: markdown
+          rename: safe
         required: true
       - name: description
         label: Description
         type: string
+        description: Used for search and social previews.
       - name: summary
         label: Summary
         type: string
@@ -31,8 +36,9 @@ content:
         label: Tags
         type: string
       - name: minute
-        label: Minute
+        label: Reading time in minutes
         type: number
+        description: Leave blank to hide reading time.
       - name: image
         label: Image
         type: image
@@ -41,6 +47,7 @@ content:
         label: Layout
         default: post
         required: true
+        hidden: true
   - name: config
     label: Jekyll config
     path: _config.yml
@@ -52,10 +59,7 @@ content:
       - name: description
         label: Website description
         type: string
-        description: Will be provused for any page with no description.
-      - name: title
-        label: Website title
-        type: string
+        description: Used when a page has no description.
       - name: aboutme
         label: About me
         type: string

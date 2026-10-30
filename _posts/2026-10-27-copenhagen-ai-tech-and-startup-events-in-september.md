@@ -22,7 +22,7 @@ Furthermore, attended the [Bilt.me](http://Bilt.me) hackathon which actually sur
 
 My biggest takeaway from the month: as building software becomes easier, knowing what to build, making good engineering decisions and automating the unnecessary become even more valuable.
 
-![Claude for Fintech fireside chat](/1792965698121.jpg)
+![Claude for Fintech fireside chat](/images/1792965698121.jpg)
 
-![](/1792965699669.jpg)
+![](/images/1792965699669.jpg)
 

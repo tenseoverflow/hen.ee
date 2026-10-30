@@ -201,7 +201,7 @@ footer {
 /* Title */
 
 .header-text {
-  font-style: italic;
+  font-style: normal;
   font-size: 2em;
   text-align: start;
   padding: 0;
@@ -211,7 +211,7 @@ footer {
 
 .author,
 .author-footer {
-  font-style: italic;
+  font-style: normal;
   text-decoration-color: var(--link);
   color: rgb(56, 56, 56);
   margin: 0;
