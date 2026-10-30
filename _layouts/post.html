@@ -5,6 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    {% include theme_init.html %}
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="/css/dark.css" />
@@ -30,10 +31,6 @@ layout: compress
 		</noscript>
 	</head>
 	<body>
-		<script>
-			if (localStorage.theme)
-				document.documentElement.setAttribute("data-theme", localStorage.theme);
-		</script>
 
 		{% include blog_header.html %}
 

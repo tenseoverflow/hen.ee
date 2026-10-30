@@ -1,6 +1,6 @@
 /* dark theme */
 
-[data-theme="dark"] :root {
+:root[data-theme="dark"] {
   color-scheme: dark;
   --text: #d2d2d2;
   --bg: #121212;

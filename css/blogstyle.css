@@ -305,7 +305,6 @@ hr {
   border: 0.2rem dotted;
   padding: 0.06rem;
   color: var(--alt-colour);
-  z-index: -1;
 }
 
 header > hr {

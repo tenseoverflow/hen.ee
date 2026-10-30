@@ -75,6 +75,12 @@ content:
       - name: aboutme
         label: About me
         type: string
+      - name: aboutme-text
+        label: Homepage introduction
+        type: rich-text
+        description: Content between the dotted divider and the portfolio section.
+        options:
+          format: html
       - name: url
         label: Website URL
         type: string
@@ -84,14 +90,14 @@ content:
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
 
+settings:
+  content:
+    merge: true
+
 components:
   portfolio_group:
     type: object
     fields:
-      - name: intro
-        label: Section introduction
-        type: text
-        description: Saved for the section; not shown in the card modal.
       - name: items
         label: Cards
         type: object

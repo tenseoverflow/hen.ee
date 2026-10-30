@@ -5,6 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    {% include theme_init.html %}
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{{ page.title }}</title>
@@ -40,10 +41,6 @@ layout: compress
 		%} {% endif %} {% feed_meta %} {% seo title=false %}
 	</head>
 	<body>
-		<script>
-			if (localStorage.theme)
-				document.documentElement.setAttribute("data-theme", localStorage.theme);
-		</script>
 
 		<main>{% include anchor_headings.html html=content anchorBody="#" %}</main>
 

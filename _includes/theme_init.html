@@ -1,0 +1,14 @@
+<script>
+  (() => {
+    let theme;
+    try { theme = localStorage.getItem('theme'); } catch (_) {}
+    if (theme !== 'dark' && theme !== 'light') {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+<style>
+  html { background-color: #fff; color-scheme: light; }
+  html[data-theme="dark"] { background-color: #121212; color-scheme: dark; }
+</style>
