@@ -3,7 +3,7 @@ title: "A Year of Hosting My Public Self-Hosted Instances"
 layout: post
 description: Some of my self hosted instances of free and open source software for everyone to use.
 summary: Publicly hosted online instances of free and open source software.
-tags: 2022 technology self-hosted
+tags: ["2022", "technology", "self-hosted"]
 minute: 2
 ---
 

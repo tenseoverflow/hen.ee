@@ -3,7 +3,7 @@ title: "Using GNOME for a Month"
 layout: post
 description: After installing Fedora 36 on my laptop, I decided to try out GNOME 42.
 summary: My review of GNOME 42.
-tags:   2022 review technology 
+tags: ["2022", "review", "technology"]
 minute: 7
 ---
 

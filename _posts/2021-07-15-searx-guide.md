@@ -3,7 +3,7 @@ title: How to Host a Searx Instance
 layout: post
 description: This is a guide on setting up your own Searx instance with Filtron reverse proxy and Morty result proxy. Searx is an open-source privacy-respecting metasearch engine.
 summary: This is a guide on how to set up a Searx instance on your server.
-tags:   2021 technology guide self-hosted
+tags: ["2021", "technology", "guide", "self-hosted"]
 minute: 15
 image: /images/searx1.png
 ---

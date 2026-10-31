@@ -6,7 +6,7 @@ description: Why I think traditional media will ultimately triumph over social
 summary: I believe the promise of digital town squares are over. It was a flawed
   and ambitious idea all along. Reputable media sources will rise again as
   people search for stability. They will bear more responsibility as ever.
-tags: technology
+tags: ["technology"]
 minute: 2
 layout: post
 ---

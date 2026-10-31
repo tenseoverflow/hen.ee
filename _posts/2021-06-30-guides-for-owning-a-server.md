@@ -3,7 +3,7 @@ title: How to Manage and Own a Server
 layout: post
 description: In order to become more web independent and private, it is highly recommended to start hosting your own website and services yourself.
 summary: How to become web independent and manage your own server.
-tags:   2021 privacy technology guide self-hosted
+tags: ["2021", "privacy", "technology", "guide", "self-hosted"]
 minute: 3
 image: /images/wp2168838.jpg
 ---

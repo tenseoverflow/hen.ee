@@ -5,7 +5,7 @@ description: Last month, I attended four AI events in Copenhagen, each leaving
   me with something different to think about.
 summary: Last month, I attended four AI events in Copenhagen, each leaving me
   with something different to think about.
-tags: startup technology
+tags: ["startup", "technology"]
 layout: post
 ---
 Last month, I attended four AI events in Copenhagen, each leaving me with something different to think about.

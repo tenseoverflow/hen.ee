@@ -3,7 +3,7 @@ title: "Reworking my NAS (Fedora Server Edition)"
 layout: post
 description: I had enough of Open Media Vault. So I decided to give Fedora Server a go. So far it's going OK.
 summary: Reworking my NAS' software and structure.
-tags: 2023 technology guide self-hosted
+tags: ["2023", "technology", "guide", "self-hosted"]
 minute: 5
 ---
 

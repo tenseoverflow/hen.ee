@@ -4,7 +4,7 @@ title:  "DOMi & JD Beck's NOT TiGHT: Pioneers of The Future of Jazz"
 description: What happens when a gen Z drummer from Detroit and a keyboardist from Paris make a jazz duo?
 summary: Review about DOMi & JD Beck's NOT TiGHT
 image: /images/nottight.jpg
-tags:   2022 music review
+tags: ["2022", "music", "review"]
 minute: 5
 ---
 

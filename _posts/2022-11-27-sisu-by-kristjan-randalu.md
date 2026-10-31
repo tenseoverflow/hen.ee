@@ -3,7 +3,7 @@ title: "Currently Listening – Sisu by Kristjan Randalu"
 layout: post
 description: One of the best Estonian (and if not the world) jazz pianist came out with a new album in this year's September Review of album Sisu by Kristjan Randalu and New Wind Jazz Orchestra.
 summary: Review of album Sisu by Kristjan Randalu and New Wind Jazz Orchestra.
-tags:   2022 music review
+tags: ["2022", "music", "review"]
 minute: 4
 ---
 

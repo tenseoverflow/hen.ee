@@ -1,8 +1,7 @@
 title: hen.ee
 email: contact@hen.ee
-aboutme: >-
+description: >-
   Student, frontend web developer and Linux sysadmin based in Tallinn, Estonia.
-description: Student, frontend web developer and Linux sysadmin based in Estonia. 
 tagline: Frontend web developer and Linux sysadmin.
 baseurl: "" 
 url: "https://hen.ee" 

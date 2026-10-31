@@ -3,7 +3,7 @@ title: "Severance: Work & Life Hell"
 layout: post
 description: Review about the series Severance on Apple TV+. 
 summary: Review about the series Severance.
-tags:   2022 technology series review
+tags: ["2022", "technology", "series", "review"]
 minute: 3
 image: /images/severance.jpg
 ---

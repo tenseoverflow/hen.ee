@@ -3,7 +3,7 @@ title: "Blog Comments With Utterances"
 layout: post
 description: Trying out a new system for lightweight comments on my blog that is powered by Github Issues. Works wonderfully so far.
 summary: Trying out lightweight comments system for my blog that is powered by Github.
-tags: 2023 website
+tags: ["2023", "website"]
 minute: 2
 ---
 

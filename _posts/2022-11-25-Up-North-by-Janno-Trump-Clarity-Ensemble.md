@@ -3,7 +3,7 @@ title: "Currently Listening – Up North by Janno Trump Clarity Ensemble"
 layout: post
 description: Piano trio with a string quartet bringing modern technical and northern sound to jazz. Review of album Up North by Janno Trump Clarity Ensemble.
 summary: Review of album Up North by Janno Trump Clarity Ensemble.
-tags:   2022 music review
+tags: ["2022", "music", "review"]
 minute: 3
 image: /images/a2707499116_16.jpg
 ---

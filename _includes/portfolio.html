@@ -1,35 +1,45 @@
+{% assign explore = "Explore my work" %}
+{% assign projects_label = "Portfolio projects" %}
+{% assign close_label = "Close portfolio" %}
+{% assign navigation_label = "Project navigation" %}
+{% assign previous_label = "Previous project" %}
+{% assign next_label = "Next project" %}
+{% if page.locale == "et" %}
+  {% assign explore = "Vaata minu töid" %}
+  {% assign projects_label = "Portfoolio projektid" %}
+  {% assign close_label = "Sulge portfoolio" %}
+  {% assign navigation_label = "Projektide navigeerimine" %}
+  {% assign previous_label = "Eelmine projekt" %}
+  {% assign next_label = "Järgmine projekt" %}
+{% endif %}
 <section id="portfolio" aria-label="Portfolio">
   <button class="portfolio-launch" aria-haspopup="dialog" aria-controls="portfolio-dialog">
     <span class="portfolio-preview" aria-hidden="true"><i></i><i></i><i></i></span>
-    <span><strong>Portfolio</strong><br>Explore my work <span aria-hidden="true">↗</span></span>
+    <span><strong>Portfolio</strong><br>{{ explore }} <span aria-hidden="true">↗</span></span>
   </button>
-  <dialog id="portfolio-dialog" aria-label="Portfolio projects">
+  <dialog id="portfolio-dialog" aria-label="{{ projects_label }}">
     <div class="portfolio-scroll" tabindex="0">
-      {% assign groups = "recent_work,other_projects" | split: "," %}
-      {% for group in groups %}
-      {% for item in site.data.portfolio[group].items %}
+      {% for item in site.data.portfolio %}
       <div class="portfolio-step">
         <article class="portfolio-card">
-          <button class="portfolio-close" aria-label="Close portfolio">×</button>
+          <button class="portfolio-close" aria-label="{{ close_label }}">×</button>
           <p class="portfolio-dates">{{ item.dates }}</p>
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
+          <h2>{% if page.locale == "et" %}{{ item.title_est | default: item.title }}{% else %}{{ item.title }}{% endif %}</h2>
+          <p>{% if page.locale == "et" %}{{ item.description_est | default: item.description }}{% else %}{{ item.description }}{% endif %}</p>
           <div class="portfolio-links">{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }} ↗</a>{% endfor %}</div>
         </article>
       </div>
       {% endfor %}
-      {% endfor %}
     </div>
-    <nav class="portfolio-controls" aria-label="Project navigation"><button data-direction="-1" aria-label="Previous project">←</button><output aria-live="polite"></output><button data-direction="1" aria-label="Next project">→</button></nav>
+    <nav class="portfolio-controls" aria-label="{{ navigation_label }}"><button data-direction="-1" aria-label="{{ previous_label }}">←</button><output aria-live="polite"></output><button data-direction="1" aria-label="{{ next_label }}">→</button></nav>
   </dialog>
   <noscript>
     <style>.portfolio-launch { display: none; }</style>
     <h2>Portfolio</h2>
-    {% assign groups = "recent_work,other_projects" | split: "," %}
-    {% for group in groups %}{% for item in site.data.portfolio[group].items %}
-    <article><p>{{ item.dates }}</p><h3>{{ item.title }}</h3><p>{{ item.description }}</p>
+    {% for item in site.data.portfolio %}
+    <article><p>{{ item.dates }}</p><h3>{% if page.locale == "et" %}{{ item.title_est | default: item.title }}{% else %}{{ item.title }}{% endif %}</h3><p>{% if page.locale == "et" %}{{ item.description_est | default: item.description }}{% else %}{{ item.description }}{% endif %}</p>
     {% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</article>
-    {% endfor %}{% endfor %}
+    {% endfor %}
   </noscript>
 </section>
 <script src="/js/portfolio.js" defer></script>

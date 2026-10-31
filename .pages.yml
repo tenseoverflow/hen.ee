@@ -2,6 +2,7 @@ media:
   input: images
   output: /images
   categories: [image]
+  rename: safe
 content:
   - name: posts
     label: Posts
@@ -23,7 +24,6 @@ content:
         type: rich-text
         options:
           format: markdown
-          rename: safe
         required: true
       - name: description
         label: Description
@@ -35,6 +35,7 @@ content:
       - name: tags
         label: Tags
         type: string
+        list: true
       - name: minute
         label: Reading time in minutes
         type: number
@@ -53,13 +54,40 @@ content:
     type: file
     path: _data/portfolio.yml
     format: yaml
+    list: true
     fields:
-      - name: recent_work
-        label: Recent work
-        component: portfolio_group
-      - name: other_projects
-        label: Other projects
-        component: portfolio_group
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: title_est
+        label: Estonian title
+        type: string
+      - name: description_est
+        label: Estonian description
+        type: text
+      - name: dates
+        label: Date or date range
+        type: string
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: links
+        label: Project links
+        type: object
+        list:
+          collapsible:
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Link text
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true
   - name: config
     label: Jekyll config
     path: _config.yml
@@ -71,16 +99,38 @@ content:
       - name: description
         label: Website description
         type: string
-        description: Used when a page has no description.
-      - name: aboutme
-        label: About me
-        type: string
+        description: Homepage introduction and fallback page description.
       - name: aboutme-text
         label: Homepage introduction
         type: rich-text
         description: Content between the dotted divider and the portfolio section.
         options:
           format: html
+      - name: aboutme-est
+        label: Estonian website description
+        type: string
+      - name: aboutme-text-est
+        label: Estonian homepage introduction
+        type: rich-text
+        options:
+          format: html
+      - name: author
+        label: Author
+        type: string
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: social
+        label: Social profile
+        type: object
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: links
+            label: Social links
+            type: string
+            list: true
       - name: url
         label: Website URL
         type: string
@@ -93,43 +143,3 @@ content:
 settings:
   content:
     merge: true
-
-components:
-  portfolio_group:
-    type: object
-    fields:
-      - name: items
-        label: Cards
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{title}"
-        description: Cards appear in this order. Recent work comes before Other projects.
-        fields:
-          - name: title
-            label: Title
-            type: string
-            required: true
-          - name: dates
-            label: Date or date range
-            type: string
-          - name: description
-            label: Description
-            type: text
-            required: true
-          - name: links
-            label: Project links
-            type: object
-            list:
-              collapsible:
-                summary: "{label}"
-            fields:
-              - name: label
-                label: Link text
-                type: string
-                required: true
-              - name: url
-                label: URL
-                type: string
-                required: true

@@ -3,7 +3,7 @@ title: "Updates to my Website and More"
 layout: post
 description: My plans for this website and discussion into additional topics for this summer.
 summary: Website updates.
-tags:   2022 website
+tags: ["2022", "website"]
 minute: 1
 ---
 
