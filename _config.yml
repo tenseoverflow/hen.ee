@@ -7,13 +7,13 @@ url: https://hen.ee
 permalink: /:title/
 lang: en-US
 timezone: Europe/London
-aboutme-text: <p>I started off with front-end web development, nowadays
-  supercharging myself using agentic engineering to do full-stack development
-  and think much bigger on impactful software. Furthermore, you can find me
-  interested in good design, finance and how different systems work or came to
-  be.</p><p>Sometimes I write <a class="down" href="#recents">in my blog</a>
-  about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy
-  technological ramblings but could extend to a discussion into random personal
+aboutme-text: <p>I started off with building front-end web apps. Nowadays,
+  supercharging with agents to do full-stack development and think much bigger
+  on software that impacts. Furthermore, you can find me interested in good
+  design, finance and how different systems work or came to be.</p><p>Sometimes
+  I write <a class="down" href="#recents">in my blog</a> about whatever
+  pseudo-intellectual nonsense I have on my mind — mostly nerdy technological
+  ramblings but could extend to a discussion into random personal
   topics.</p><p>Find me on <a rel="me" class="outside"
   href="https://mastodon.social/@henriaunin">Mastodon</a>, <a rel="me"
   class="outside" href="https://github.com/tenseoverflow">GitHub</a> or send me
