@@ -8,16 +8,17 @@ permalink: /:title/
 lang: en-US
 timezone: Europe/London
 aboutme-text: <p>I started off with building front-end web apps. Nowadays,
-  supercharging with agents to do full-stack development and think much bigger
-  on software that impacts. Furthermore, you can find me interested in good
-  design, finance and how different systems work or came to be.</p><p>Sometimes
-  I write <a class="down" href="#recents">in my blog</a> about whatever
-  pseudo-intellectual nonsense I have on my mind — mostly nerdy technological
-  ramblings but could extend to a discussion into random personal
-  topics.</p><p>Find me on <a rel="me" class="outside"
-  href="https://mastodon.social/@henriaunin">Mastodon</a>, <a rel="me"
-  class="outside" href="https://github.com/tenseoverflow">GitHub</a> or send me
-  an e-mail to <a rel="me" href="mailto:contact@hen.ee">contact@hen.ee</a> (<a
+  supercharging with agents to do full-stack development (i.e build) and think
+  much bigger on software that impacts. Furthermore, you can find me interested
+  in good design, finance and how different systems work or came to be — and how
+  they can be improved.</p><p>Sometimes I write <a class="down"
+  href="#recents">in my blog</a> about whatever pseudo-intellectual nonsense I
+  have on my mind — mostly nerdy technological ramblings but could extend to a
+  discussion into random personal topics.</p><p>Find me on <a rel="me"
+  class="outside" href="https://mastodon.social/@henriaunin">Mastodon</a>, <a
+  rel="me" class="outside" href="https://github.com/tenseoverflow">GitHub</a> or
+  send me an e-mail to <a rel="me"
+  href="mailto:contact@hen.ee">contact@hen.ee</a> (<a
   href="https://hen.ee/hen.asc">GPG</a>).</p>
 aboutme-est: Informaatika ja tehisintellekti tudeng TalTechis, 2026
   tarkvaraarendaja praktikant Boltis, endine tarkvaraarendaja Voltonis
