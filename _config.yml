@@ -7,27 +7,29 @@ url: https://hen.ee
 permalink: /:title/
 lang: en-US
 timezone: Europe/London
-aboutme-text: <p>Mainly my expertise is in frontend web development. I sometimes
-  tinker with Linux, open-source software and servers. I am keen on learning new
-  technology or on how old technology can still suit us better even
-  today.</p><p>Sometimes I write <a class="down" href="#recents">in my blog</a>
+aboutme-text: <p>I started off with front-end web development, nowadays
+  supercharging myself using agentic engineering to do full-stack development
+  and think much bigger on impactful software. Furthermore, you can find me
+  interested in good design, finance and how different systems work or came to
+  be.</p><p>Sometimes I write <a class="down" href="#recents">in my blog</a>
   about whatever pseudo-intellectual nonsense I have on my mind — mostly nerdy
   technological ramblings but could extend to a discussion into random personal
-  topics. I'm also quite interested in internet privacy, self-hosting and web
-  decentralisation.</p><p>Find me on <a rel="me" class="outside"
+  topics.</p><p>Find me on <a rel="me" class="outside"
   href="https://mastodon.social/@henriaunin">Mastodon</a>, <a rel="me"
-  class="outside" href="https://github.com/tenseoverflow">Github</a> or send me
+  class="outside" href="https://github.com/tenseoverflow">GitHub</a> or send me
   an e-mail to <a rel="me" href="mailto:contact@hen.ee">contact@hen.ee</a> (<a
   href="https://hen.ee/hen.asc">GPG</a>).</p>
 aboutme-est: Informaatika ja tehisintellekti tudeng TalTechis, 2026
   tarkvaraarendaja praktikant Boltis, endine tarkvaraarendaja Voltonis
-aboutme-text-est: <p>Tegelen peamiselt veebidisaini ja -arendusega. Vahest ka
-  <em>open-source</em> tarkvaraga ning Linuxiga.</p><p>Vahest kirjutan <a
-  class="down" href="#recents">blogisse</a> midagi huvitavat. Peamiselt inglise
-  keeles, aga kui jõuan, siis ka eesti keeles.</p><p>Jälgi mind <a
-  class="outside" href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a
-  class="outside" href="https://github.com/tenseoverflow">Githubis</a> või saada
-  e-mail <a href="mailto:contact@hen.ee">contact@hen.ee</a> (<a
+aboutme-text-est: <p>Tegelen peamiselt veebidisaini ja -arendusega, kuid ei
+  piirdu sellega. Huvitab ka <em>open-source</em> tarkvara, Linux, hea kasutaja
+  disain, finantsteemad ja kuidas erinevad süsteemid toimivad.</p><p>Vahest
+  kirjutan <a class="down" href="#recents">blogisse</a> midagi huvitavat.
+  Peamiselt inglise keeles, aga vahest tunde järgi ka eesti keeles.</p><p>Jälgi
+  mind <a class="outside"
+  href="https://mastodon.social/@henriaunin">Mastodonis</a>, <a class="outside"
+  href="https://github.com/tenseoverflow">GitHubis</a> või saada e-mail <a
+  href="mailto:contact@hen.ee">contact@hen.ee</a> (<a
   href="https://hen.ee/hen.asc">GPG</a>).</p>
 author: Henri Aunin
 social:
